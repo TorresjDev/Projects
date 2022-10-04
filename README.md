@@ -1,2 +1,2 @@
-# Project
+# Projects
 Projects created while learning
