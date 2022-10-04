@@ -1,2 +1,2 @@
-# Project-test
+# Project
 Projects created while learning
