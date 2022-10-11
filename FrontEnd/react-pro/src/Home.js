@@ -1,20 +1,32 @@
-import { useState } from "react";
+import { useEffect } from "react";
+// import BlogList from "./BlogList";
 
 const Home = () => {
-	const [name, setName] = useState("World");
-	const [age, setAge] = useState(26);
+	// const [blogs, setBlogs] = useState(null);
 
-	const handleClick = () => {
-		setName("Jesus");
-		setAge(age + 1);
-	};
+	useEffect(() => {
+		fetch("http://localhost:8000/blogs")
+			.then((res) => {
+				return res.json();
+			})
+			.then((data) => {
+				console.log(data);
+			});
+	}, []);
+
+	// const handleDelete = (id) => {
+	// 	const newBlog = blogs.filter((blog) => blog.id !== id);
+	// 	setBlogs(newBlog);
+	// };
 
 	return (
 		<div className="home">
-			<h2>Homepage</h2>
-			<p>Hello, {name}</p>
-			<p>Seen, {age}</p>
-			<button onClick={handleClick}>Click me</button>
+			{/* <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} /> */}
+			{/* <BlogList
+				blogs={blogs.filter((blog) => blog.author === "Tony")}
+				title="Tony's Blogs!"
+				handleDelete={handleDelete}
+			/> */}
 		</div>
 	);
 };

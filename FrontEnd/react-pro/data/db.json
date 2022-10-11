@@ -1,0 +1,58 @@
+{
+	"blogs": [
+		{
+			"title": "Rich Dad Poor Dad",
+			"body": "1997 book",
+			"author": "Robert Kiyosaki",
+			"id": 1
+		},
+		{
+			"title": "The Secret",
+			"body": "2006 book",
+			"author": "Rhonda Byrne",
+			"id": 2
+		},
+		{
+			"title": "3 Magic Words",
+			"body": "1954 book",
+			"author": "Uell Stanley Andersen",
+			"id": 3
+		},
+		{
+			"title": "The Hobbit",
+			"body": "An Unexpected Journey",
+			"author": "Uell Stanley Andersen",
+			"id": 4
+		},
+		{
+			"title": "The Hobbit",
+			"body": " An Unexpected Journey 2013",
+			"author": "Peter Jackson",
+			"id": 5
+		},
+		{
+			"title": "The Lord of the Rings",
+			"body": "The fellowship of the Ring",
+			"author": "Peter Jackson",
+			"id": 6
+		},
+		{
+			"title": "The Ninth Gate",
+			"body": "1999 Movie",
+			"author": "Johnny Depp",
+			"id": 7
+		},
+		{
+			"title": "Tombstone",
+			"body": "1993 Movie",
+			"author": "Doc Holiday & Wyatt Earp",
+			"id": 8
+		},
+		{
+			"title": "Tomb Raider",
+			"body": "Journey to Bermuda Triangle",
+			"author": "Lara Croft",
+			"id": 9
+		}
+	]
+}
