@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Create from "./Create";
 import Home from "./Home";
 import BlogDetails from "./BlogDetails";
+import NotFound from "./NotFound";
 
 function App() {
 	return (
@@ -21,6 +22,9 @@ function App() {
 							<BlogDetails />
 						</Route>
 						<Route path="/contact">Contact</Route>
+						<Route path="*">
+							<NotFound></NotFound>
+						</Route>{" "}
 					</Switch>
 				</div>
 			</div>
