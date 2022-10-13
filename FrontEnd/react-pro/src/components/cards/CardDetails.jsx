@@ -1,25 +1,25 @@
 import { useHistory, useParams } from "react-router-dom";
-import useFetch from "./useFetch";
+import useFetch from "../../services/useFetch";
 
-const BlogDetails = () => {
+const CardDetails = () => {
 	const { id } = useParams();
 	const {
 		data: blog,
 		error,
 		isPending,
-	} = useFetch("http://localhost:8000/blogs/" + id);
+	} = useFetch("http://localhost:8000/cards/" + id);
 	const history = useHistory();
 
 	const handleClick = () => {
-		fetch("http://localhost:8000/blogs/" + blog.id, {
+		fetch("http://localhost:8000/cards/" + blog.id, {
 			method: "DELETE",
 		}).then(() => {
-			history.push("/");
+			history.push("/cards");
 		});
 	};
 
 	return (
-		<div className="blog-details">
+		<div className="card-details">
 			{isPending && <div>Loading...</div>}
 			{error && <div>{error}</div>}
 			{blog && (
@@ -34,4 +34,4 @@ const BlogDetails = () => {
 	);
 };
 
-export default BlogDetails;
+export default CardDetails;

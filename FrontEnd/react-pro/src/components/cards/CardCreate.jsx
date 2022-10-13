@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-const Create = () => {
+const CardCreate = () => {
 	const [title, setTitle] = useState("");
 	const [body, setBody] = useState("");
 	const [author, setAuthor] = useState("mario");
@@ -16,20 +16,20 @@ const Create = () => {
 
 		console.log(blog);
 
-		fetch("http://localhost:8000/blogs", {
+		fetch("http://localhost:8000/cards", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(blog),
 		}).then(() => {
-			console.log("new blog created");
+			console.log("new card created");
 			setIsPending(false);
 			// history.go(-1);
-			history.push("/");
+			history.push("/create-card");
 		});
 	};
 
 	return (
-		<div className="create">
+		<div className="card-create">
 			<h2>Add a New Blog</h2>
 			<form onSubmit={handleSubmit}>
 				<label>Blog title:</label>
@@ -57,4 +57,4 @@ const Create = () => {
 	);
 };
 
-export default Create;
+export default CardCreate;
