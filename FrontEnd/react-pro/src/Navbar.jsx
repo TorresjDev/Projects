@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 	return (
 		<nav className="navbar">
-			<h1>The NavBar Blog</h1>
+			<h1>NavBar</h1>
 			<div className="links">
 				<Link to="/">Home</Link>
 				<Link
-					to="/create"
+					to="/create-card"
 					style={{
 						color: "white",
 						backgroundColor: "#8818ff",
 						borderRadius: "8px",
 					}}
 				>
-					New Blog
+					New Card
 				</Link>
 			</div>
 		</nav>

@@ -41,57 +41,57 @@
 	padding: 20px;
 }
 
-/* Home blog previews */
-.blog-preview {
+/* Home card previews */
+.card-preview {
 	padding: 10px 16px;
 	margin: 20px 0;
 	border-bottom: 1px solid #fafafa;
 }
 
-.blog-preview:hover {
+.card-preview:hover {
 	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.blog-preview h2 {
+.card-preview h2 {
 	font-size: 20px;
 	color: #f1356d;
 	margin-bottom: 8px;
 }
 
-.blog-preview a {
+.card-preview a {
 	text-decoration: none;
 }
 
-/* blog details page */
+/* card details page */
 
-.blog-details h2 {
+.card-details h2 {
 	font-size: 20px;
 	color: #f1356d;
 	margin-bottom: 10px;
 }
 
-.blog-details div {
+.card-details div {
 	margin: 20px 0;
 }
 
-/* create new blog form */
-.create {
+/* card-create new card form */
+.card-create {
 	max-width: 400px;
 	margin: 0 auto;
 	text-align: center;
 }
-.create label {
+.card-create label {
 	text-align: left;
 	display: block;
 }
-.create h2 {
+.card-create h2 {
 	font-size: 20px;
 	color: #f1356d;
 	margin-bottom: 30px;
 }
-.create input,
-.create textarea,
-.create select {
+.card-create input,
+.card-create textarea,
+.card-create select {
 	width: 100%;
 	padding: 6px 10px;
 	margin: 10px 0;
@@ -99,7 +99,7 @@
 	box-sizing: border-box;
 	display: block;
 }
-.create button {
+.card-create button {
 	background: #f1356d;
 	color: #fff;
 	border: 0;
