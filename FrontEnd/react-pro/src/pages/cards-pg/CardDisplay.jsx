@@ -1,5 +1,5 @@
-import Cardlist from "../components/cards/CardList";
-import useFetch from "../services/useFetch";
+import Cardlist from "../../components/cards/CardList";
+import useFetch from "../../services/useFetch";
 
 const CardDisplay = () => {
 	const {

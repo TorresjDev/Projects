@@ -1,6 +1,6 @@
-import LandingPage from "../components/ui/LandingPage";
-import Contact from "../components/ui/Contact";
-import Footer from "../components/ui/Footer";
+import LandingPage from "../../components/ui/LandingPage";
+import Contact from "../../components/ui/Contact";
+import Footer from "../../components/ui/Footer";
 import React from "react";
 
 const Home = () => {
