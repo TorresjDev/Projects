@@ -6,7 +6,7 @@ import React from "react";
 const Home = () => {
 	return (
 		<React.Fragment>
-			<LandingPage />
+			<LandingPage></LandingPage>
 			<Contact />
 			<Footer />
 		</React.Fragment>
