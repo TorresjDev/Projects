@@ -1,5 +1,5 @@
 import { useHistory, useParams } from "react-router-dom";
-import useFetch from "../../services/useFetch";
+import useFetch from "../../../services/useFetch";
 
 const CardDetails = () => {
 	const { id } = useParams();

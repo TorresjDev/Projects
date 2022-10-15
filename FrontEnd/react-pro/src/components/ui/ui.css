@@ -1,3 +1,49 @@
+/* nav */
+@media (max-width: 28.75em) {
+	.nav {
+		justify-content: center;
+	}
+
+	.nav-list {
+		margin: 0 1rem;
+	}
+}
+
+.nav {
+	display: flex;
+	font-size: 3rem;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: var(--main-red);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+	z-index: 10;
+}
+
+.nav-list {
+	display: flex;
+	margin-right: 2rem;
+}
+
+.nav-list Link {
+	display: block;
+	font-size: 16px;
+	padding: 2rem;
+	margin-left: 16px;
+	text-decoration: none;
+	padding: 6px;
+}
+
+.nav-list Link:hover {
+	background: var(--main-blue);
+}
+
+.nav Link {
+	margin-left: auto;
+}
+
 /* Contact section */
 .contact-section {
 	display: flex;

@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./pages/ui-pg/Navbar";
-import Home from "./pages/ui-pg/Home";
-import CardCreate from "./components/cards/CardCreate";
+import Navbar from "./components/ui/Navbar";
+import Home from "./components/ui/Home";
+// import Contact from "./components/ui/Contact";
+import CardCreate from "./components/projects/cards/CardCreate";
 import CardDisplay from "./pages/cards-pg/CardDisplay";
-import CardDetails from "./components/cards/CardDetails";
+import CardDetails from "./components/projects/cards/CardDetails";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -16,16 +17,18 @@ function App() {
 						<Route exact path="/">
 							<Home />
 						</Route>
+						{/* <Route exact path="/contact">
+							<Contact />
+						</Route> */}
 						<Route exact path="/cards">
 							<CardDisplay />
 						</Route>
-						<Route path="/create-card">
+						<Route path="/create/card">
 							<CardCreate />
 						</Route>
 						<Route path="/cards/:id">
 							<CardDetails />
 						</Route>
-						<Route path="/contact">Contact</Route>
 						<Route path="*">
 							<NotFound></NotFound>
 						</Route>
