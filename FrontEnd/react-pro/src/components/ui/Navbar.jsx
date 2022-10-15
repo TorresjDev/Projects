@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Nav } from "rsuite";
+import HomeIcon from "@rsuite/icons/legacy/Home";
 import "./ui.css";
 
 const Navbar = () => {
@@ -6,16 +7,16 @@ const Navbar = () => {
 		<nav id="navbar" className="nav">
 			<ul className="nav-list">
 				<li>
-					<Link to="/">Home</Link>
+					<Nav.Item icon={<HomeIcon />}>Home</Nav.Item>
 				</li>
 				<li>
-					<Link to="/cards">Cards</Link>
+					<Nav.Item to="/cards">Cards</Nav.Item>
 				</li>
 				<li>
-					<Link to="/create-card">New Card</Link>
+					<Nav.Item to="/create-card">New Card</Nav.Item>
 				</li>
 				<li>
-					<Link to="id:contact">Contact</Link>
+					<Nav.Item to="id:contact">Contact</Nav.Item>
 				</li>
 			</ul>
 		</nav>
