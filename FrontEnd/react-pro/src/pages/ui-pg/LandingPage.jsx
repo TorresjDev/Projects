@@ -1,3 +1,5 @@
+import "./ui-pg.css";
+
 const LandingPage = () => {
 	return (
 		<section id="welcome-section" className="welcome-section">

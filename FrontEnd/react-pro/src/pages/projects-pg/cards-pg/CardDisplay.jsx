@@ -1,4 +1,4 @@
-import Cardlist from "../../components/cards/CardList";
+import Cardlist from "../../components/projects/cards/CardList";
 import useFetch from "../../services/useFetch";
 
 const CardDisplay = () => {

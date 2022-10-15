@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./ui-pg.css";
+import "./ui.css";
 
 const Navbar = () => {
 	return (
@@ -13,6 +13,9 @@ const Navbar = () => {
 				</li>
 				<li>
 					<Link to="/create-card">New Card</Link>
+				</li>
+				<li>
+					<Link to="id:contact">Contact</Link>
 				</li>
 			</ul>
 		</nav>
