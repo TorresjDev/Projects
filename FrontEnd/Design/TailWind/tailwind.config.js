@@ -11,6 +11,13 @@ module.exports = {
 				},
 				allTheWay: "#820000",
 			},
+			fontFamily: {
+				fonti: "Inspiration",
+				fontii: "Silkscreen",
+				fontiii: "Pacifico",
+				fontiv: "Shadows Into Light",
+				fontv: "Dancing Script",
+			},
 		},
 	},
 	plugins: [],
