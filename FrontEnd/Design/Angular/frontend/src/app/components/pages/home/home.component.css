@@ -64,7 +64,7 @@ li a img {
 .origins span {
   border-radius: 2rem;
   background-color: whitesmoke;
-  display: inline-block;
+  display: initial;
   font-size: 0.8rem;
   color: grey;
   margin-right: 0.3rem;
