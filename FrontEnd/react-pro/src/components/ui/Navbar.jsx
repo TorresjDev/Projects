@@ -1,5 +1,5 @@
-import { Nav } from "rsuite";
-import HomeIcon from "@rsuite/icons/legacy/Home";
+// import { Nav } from "rsuite";
+// import HomeIcon from "@rsuite/icons/legacy/Home";
 import "./ui.css";
 
 const Navbar = () => {
@@ -7,16 +7,16 @@ const Navbar = () => {
 		<nav id="navbar" className="nav">
 			<ul className="nav-list">
 				<li>
-					<Nav.Item icon={<HomeIcon />}>Home</Nav.Item>
+					<span icon="">Home</span>
 				</li>
 				<li>
-					<Nav.Item to="/cards">Cards</Nav.Item>
+					<span to="/cards">Cards</span>
 				</li>
 				<li>
-					<Nav.Item to="/create-card">New Card</Nav.Item>
+					<span to="/create-card">New Card</span>
 				</li>
 				<li>
-					<Nav.Item to="id:contact">Contact</Nav.Item>
+					<span to="id:contact">Contact</span>
 				</li>
 			</ul>
 		</nav>
