@@ -16,6 +16,7 @@ import { SearchComponent } from './components/partials/search/search.component';
 import { TagsComponent } from './components/partials/tags/tags.component';
 import { TitleComponent } from './components/partials/title/title.component';
 import { ToastrModule } from 'ngx-toastr';
+import { InputContainerComponent } from './components/partials/input-container/input-container.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ToastrModule } from 'ngx-toastr';
     TagsComponent,
     TitleComponent,
     LoginPageComponent,
+    InputContainerComponent,
   ],
   imports: [
     AppRoutingModule,
