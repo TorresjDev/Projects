@@ -15,7 +15,7 @@ const VALIDATORS_MESSAGES: any = {
 };
 
 @Component({
-  selector: 'input-validation',
+  selector: ' input-validation',
   templateUrl: './input-validation.component.html',
   styleUrls: ['./input-validation.component.css'],
 })

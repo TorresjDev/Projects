@@ -18,6 +18,7 @@ import { TitleComponent } from './components/partials/title/title.component';
 import { ToastrModule } from 'ngx-toastr';
 import { InputContainerComponent } from './components/partials/input-container/input-container.component';
 import { InputValidationComponent } from './components/partials/input-validation/input-validation.component';
+import { TextInputComponent } from './components/partials/text-input/text-input.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { InputValidationComponent } from './components/partials/input-validation
     LoginPageComponent,
     InputContainerComponent,
     InputValidationComponent,
+    TextInputComponent,
   ],
   imports: [
     AppRoutingModule,
