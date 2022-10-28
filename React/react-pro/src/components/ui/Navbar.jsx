@@ -1,6 +1,7 @@
 // import { Nav } from "rsuite";
 // import HomeIcon from "@rsuite/icons/legacy/Home";
 import "./ui.css";
+import React from "react";
 
 const Navbar = () => {
 	return (

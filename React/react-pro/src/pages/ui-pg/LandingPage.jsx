@@ -1,3 +1,4 @@
+import React from "react";
 import "./ui-pg.css";
 
 const LandingPage = () => {

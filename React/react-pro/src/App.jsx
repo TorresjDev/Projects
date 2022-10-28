@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+
 import NotFound from "./components/NotFound";
 import Navbar from "./components/ui/Navbar";
 import Home from "./components/ui/Home";
@@ -9,33 +11,35 @@ import CardDisplay from "./pages/projects-pg/cards-pg/CardDisplay";
 
 function App() {
 	return (
-		<Router>
-			<Navbar />
-			<div className="app">
-				<div className="content">
-					<Switch>
-						<Route path="*">
-							<NotFound></NotFound>
-						</Route>
-						<Route exact path="/">
-							<Home />
-						</Route>
-						{/* <Route exact path="/contact">
+		<React.Fragment>
+			<Router>
+				<Navbar />
+				<div className="app">
+					<div className="content">
+						<Switch>
+							<Route exact path="/">
+								<Home />
+							</Route>
+							{/* <Route exact path="/contact">
 							<Contact />
 						</Route> */}
-						<Route exact path="/cards">
-							<CardDisplay />
-						</Route>
-						<Route path="/create/card">
-							<CardCreate />
-						</Route>
-						<Route path="/cards/:id">
-							<CardDetails />
-						</Route>
-					</Switch>
+							<Route exact path="/cards">
+								<CardDisplay />
+							</Route>
+							<Route path="/create/card">
+								<CardCreate />
+							</Route>
+							<Route path="/cards/:id">
+								<CardDetails />
+							</Route>{" "}
+							<Route path="*">
+								<NotFound></NotFound>
+							</Route>
+						</Switch>
+					</div>
 				</div>
-			</div>
-		</Router>
+			</Router>
+		</React.Fragment>
 	);
 }
 

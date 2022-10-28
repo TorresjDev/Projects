@@ -1,13 +1,12 @@
 import { useHistory, useParams } from "react-router-dom";
+import React from "react";
 import useFetch from "../../../services/useFetch";
 
 const CardDetails = () => {
 	const { id } = useParams();
-	const {
-		data: blog,
-		error,
-		isPending,
-	} = useFetch("http://localhost:8000/cards/" + id);
+	const { data: blog, error, isPending } = useFetch(
+		"http://localhost:8000/cards/" + id,
+	);
 	const history = useHistory();
 
 	const handleClick = () => {
