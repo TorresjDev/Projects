@@ -1,4 +1,6 @@
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
+import React from "react";
+
 import { Github } from "@styled-icons/simple-icons/Github";
 import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
 import { PhoneCall } from "@styled-icons/evaicons-solid/PhoneCall";
@@ -14,7 +16,7 @@ const Contact = () => {
 				<a
 					id="profile-link"
 					href="https://github.com/TorresjDev"
-					target="_blank"
+					// target="_blank"
 					className="contact-icons"
 					rel="noreferrer"
 				>
@@ -23,7 +25,7 @@ const Contact = () => {
 				</a>
 				<a
 					href="https://www.linkedin.com/in/torresdev/"
-					target="_blank"
+					// target="_blank"
 					className="contact-icons"
 					rel="noreferrer"
 				>
