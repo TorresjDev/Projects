@@ -4,7 +4,7 @@ import React from "react";
 import { Github } from "@styled-icons/simple-icons/Github";
 import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
 import { PhoneCall } from "@styled-icons/evaicons-solid/PhoneCall";
-import "./ui.css";
+import "./home-pg.css";
 
 const Contact = () => {
 	return (
