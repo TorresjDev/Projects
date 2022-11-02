@@ -1,9 +1,9 @@
 import React from "react";
-import "./ui-pg.css";
+import "./home-pg.css";
 
 const LandingPage = () => {
 	return (
-		<section id="welcome-section" className="welcome-section">
+		<section id="landing-pg" className="landing-pg">
 			<h1>Hey I am Jesus Torres</h1>
 			<p>a full stack software developer</p>
 		</section>
