@@ -2,22 +2,25 @@
 // import HomeIcon from "@rsuite/icons/legacy/Home";
 import "./ui.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	return (
 		<nav id="navbar" className="nav">
 			<ul className="nav-list">
 				<li>
-					<span icon="">Home</span>
+					<Link icon="" to="/">
+						Home
+					</Link>
 				</li>
 				<li>
-					<span to="/cards">Cards</span>
+					<Link to="/cards">Cards</Link>
 				</li>
 				<li>
-					<span to="/create-card">New Card</span>
+					<Link to="/create-card">New Card</Link>
 				</li>
 				<li>
-					<span to="id:contact">Contact</span>
+					<Link to="/contact">Contact</Link>
 				</li>
 			</ul>
 		</nav>
