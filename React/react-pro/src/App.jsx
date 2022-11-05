@@ -4,6 +4,7 @@ import React from "react";
 import NotFound from "./components/NotFound";
 import Navbar from "./components/ui/Navbar";
 import Home from "./components/ui/Home";
+import Contact from "./components/ui/Contact";
 // import Contact from "./components/ui/Contact";
 import CardCreate from "./components/projects/cards/CardCreate";
 import CardDetails from "./components/projects/cards/CardDetails";
@@ -20,18 +21,21 @@ function App() {
 							<Route exact path="/">
 								<Home />
 							</Route>
+							<Route exact path="/contact">
+								<Contact />
+							</Route>
 							{/* <Route exact path="/contact">
 							<Contact />
 						</Route> */}
 							<Route exact path="/cards">
 								<CardDisplay />
 							</Route>
-							<Route path="/create/card">
+							<Route path="/create-card">
 								<CardCreate />
 							</Route>
 							<Route path="/cards/:id">
 								<CardDetails />
-							</Route>{" "}
+							</Route>
 							<Route path="*">
 								<NotFound></NotFound>
 							</Route>

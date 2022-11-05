@@ -7,7 +7,7 @@ const Home = () => {
 	return (
 		<React.Fragment>
 			<LandingPage></LandingPage>
-			<Contact id="contact" />
+			{/* <Contact id="contact" /> */}
 			<Footer />
 		</React.Fragment>
 	);
