@@ -2,6 +2,10 @@
 	<html>
 		<head>
 			<link rel="stylesheet" href="landingpage.css" />
+			<script
+				src="https://kit.fontawesome.com/ec1ec1b444.js"
+				crossorigin="anonymous"
+			></script>
 			<!-- <link
 				rel="stylesheet"
 				href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -13,17 +17,26 @@
 			<div id="page-wrapper">
 				<header id="header">
 					<div class="logo">
-						<img
-							id="header-img"
-							src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-							alt="original trombones logo"
-						/>
+						<i
+							class="fab fa-qq"
+							style="
+								font-size: 51px;
+								color: maroon;
+								background: rgb(45, 45, 253);
+								background: radial-gradient(
+									circle,
+									rgba(45, 45, 253, 1) 6%,
+									rgba(118, 0, 185, 1) 82%
+								);
+								border: 0.3rem groove maroon;
+							"
+						></i>
 					</div>
 
 					<nav id="nav-bar">
 						<ul>
 							<li><a class="nav-link" href="#features">Features</a></li>
-							<li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+							<li><a class="nav-link" href="#now-playing">playing</a></li>
 							<li><a class="nav-link" href="#pricing">Pricing</a></li>
 						</ul>
 					</nav>
@@ -32,8 +45,8 @@
 				<div class="container"></div>
 
 				<section id="hero">
-					<h2>Handcrafted, home-made masterpieces</h2>
-					<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<h2>subscribe to our daily content, never miss an event</h2>
+					<form id="form" action="">
 						<input
 							name="email"
 							id="email"
@@ -50,7 +63,7 @@
 						<div class="grid">
 							<div class="icon"><i class="fa fa-3x fa-fire"></i></div>
 							<div class="desc">
-								<h2>Premium Materials</h2>
+								<h2>Current Events</h2>
 								<p>
 									Our trombones use the shiniest brass which is sourced locally.
 									This will increase the longevity of your purchase.
@@ -60,7 +73,7 @@
 						<div class="grid">
 							<div class="icon"><i class="fa fa-3x fa-truck"></i></div>
 							<div class="desc">
-								<h2>Fast Shipping</h2>
+								<h2>Free Content</h2>
 								<p>
 									We make sure you recieve your trombone as soon as we have
 									finished making it. We also provide free returns if you are
@@ -82,13 +95,15 @@
 							</div>
 						</div>
 					</section>
-					<section id="how-it-works">
+					<section id="now-playing">
 						<iframe
-							id="video"
+							width="560"
 							height="315"
-							src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+							src="https://www.youtube-nocookie.com/embed/fdixQDPA2h0?autoplay=true"
+							title="YouTube video player"
 							frameborder="0"
-							allowfullscreen=""
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
 						></iframe>
 					</section>
 					<section id="pricing">
@@ -132,7 +147,7 @@
 							<li><a href="#">Terms</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
-						<span>Copyright 2016, Original Trombones</span>
+						<span>Copyright 2022, DiCalibration</span>
 					</footer>
 				</div>
 			</div>
