@@ -199,6 +199,7 @@ footer > span {
 	border: 1px solid #000;
 	border-radius: 3px;
 	background-color: darkcyan;
+	border: 0.1rem groove maroon;
 }
 
 .product h2 {
@@ -212,7 +213,7 @@ footer > span {
 		rgba(45, 45, 253, 1) 6%,
 		rgba(118, 0, 185, 1) 82%
 	);
-	border: 0.3rem groove maroon;
+	border: 0.21rem ridge maroon;
 
 	color: silver;
 	padding: 15px 0;
@@ -247,6 +248,7 @@ footer > span {
 .product > button:hover {
 	background-color: silver;
 	transition: background-color 1s;
+	color: darkgoldenrod;
 }
 
 #page-wrapper {
@@ -270,6 +272,8 @@ footer > span {
 
 #hero input[type="email"] {
 	max-width: 275px;
+	border: 0.1rem groove maroon;
+
 	width: 100%;
 	padding: 5px;
 }
@@ -280,11 +284,13 @@ footer > span {
 	height: 30px;
 	margin: 15px 0;
 	border: 0;
-	background-color: #f1c40f;
+	background-color: grey;
+	border: 0.1rem groove maroon;
+	text-align: center;
 }
 
 #hero input[type="submit"]:hover {
-	background-color: orange;
+	background-color: silver;
 	transition: background-color 1s;
 }
 
