@@ -25,27 +25,15 @@ body {
 	height: 100vh;
 }
 
-.footer {
-	width: 450px;
-	text-align: center;
-	display: block;
-	margin: 15px auto 30px auto;
-	font-size: 0.8em;
-	color: #fff;
-}
-.footer a {
-	font-weight: 500;
-	text-decoration: none;
-	color: #fff;
-}
-
 #quote-box {
 	border-radius: 3px;
+	border: 0.3rem groove maroon;
+
 	position: relative;
 	width: 450px;
 	padding: 40px 50px;
 	display: table;
-	background-color: #fff;
+	background-color: snow;
 }
 #quote-box .quote-text {
 	text-align: center;
@@ -76,7 +64,7 @@ body {
 	height: 38px;
 	border: none;
 	border-radius: 3px;
-	color: #fff;
+	color: snow;
 	background-color: #333;
 	outline: none;
 	font-size: 0.85em;
@@ -87,6 +75,7 @@ body {
 }
 #quote-box .buttons .button:hover {
 	opacity: 0.9;
+	color: maroon;
 }
 #quote-box .buttons .button#tweet-quote,
 #quote-box .buttons .button#linkedin-quote,
@@ -100,6 +89,43 @@ body {
 	height: 30px;
 	width: 40px;
 }
-#quote-box .buttons .button#new-quote {
+#quote-box .buttons .button-quote#new-quote {
 	float: right;
+}
+
+.footer {
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: 15px auto 30px auto;
+	font-size: 0.8em;
+	color: snow;
+}
+.footer a {
+	font-weight: 500;
+	text-decoration: none;
+	color: snow;
+}
+
+.footer a:hover {
+	text-decoration: none;
+	color: goldenrod;
+}
+
+.button-quote {
+	height: 38px;
+	border-radius: 3px;
+	color: snow;
+	background-color: black;
+	font-family: "Silkscreen", sans-serif;
+	font-size: 0.85em;
+	padding: 8px 18px 6px 18px;
+	margin-top: 30px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.button-quote:hover {
+	opacity: 0.9;
+	color: gold;
 }

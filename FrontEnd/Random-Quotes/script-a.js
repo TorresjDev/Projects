@@ -1,23 +1,9 @@
+/* eslint-disable max-len */
+// eslint-disable-next-line no-unused-vars
 const projectName = "random-quote-machine";
-let quotesData;
+let quotesData = [];
 
 var colors = [
-	"#660033",
-	"#003366",
-	"#006633",
-	"#330066",
-	"#660000",
-	"#000066",
-	"#006600",
-	"#333366",
-	"#333300",
-	"#330033",
-	"#003333",
-	"#333333",
-	"#330000",
-	"#000033",
-	"#003300",
-	"#000000",
 	"#16a085",
 	"#27ae60",
 	"#2c3e50",
@@ -39,21 +25,19 @@ function getQuotes() {
 		headers: {
 			Accept: "application/json",
 		},
+		// url: "http://localhost:8000/quotes",
 		url: "https://gist.githubusercontent.com/TorresjDev/9083c20703e545dda74823a0dff49515/raw/fb6a713390a16b96a44e9df1766f1594d49ee218/.json",
 		success: function (jsonQuotes) {
-			if (typeof jsonQuotes === "string") {
-				quotesData = JSON.parse(jsonQuotes);
-				console.log("quotesData");
-				console.log(quotesData);
-			}
+			const result = JSON.stringify(jsonQuotes);
+			quotesData = JSON.parse(result);
+			console.log(quotesData);
+			console.log(result);
 		},
 	});
 }
 
 function getRandomQuote() {
-	return quotesData.quotes[
-		Math.floor(Math.random() * quotesData.quotes.length)
-	];
+	return quotesData[Math.floor(Math.random() * quotesData.length)];
 }
 
 function getQuote() {
@@ -64,15 +48,19 @@ function getQuote() {
 
 	$("#tweet-quote").attr(
 		"href",
-		"https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
+		"https://twitter.com/intent/tweet?hashtags=quotes&text=" +
 			encodeURIComponent('"' + currentQuote + '" ' + currentAuthor),
 	);
 
-	$("#linkedin-quote").attr("href", "https://www.linkedin.com/");
+	$("#linkedin-quote").attr(
+		"href",
+		"https://www.linkedin.com/sharing/share-offsite/?text=" +
+			encodeURIComponent('"' + currentQuote + '" ' + currentAuthor),
+	);
 
 	$("#tumblr-quote").attr(
 		"href",
-		"https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" +
+		"https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=" +
 			encodeURIComponent(currentAuthor) +
 			"&content=" +
 			encodeURIComponent(currentQuote) +
@@ -98,12 +86,6 @@ function getQuote() {
 		1000,
 	);
 	$(".button").animate(
-		{
-			backgroundColor: colors[color],
-		},
-		1000,
-	);
-	$(".button-quote").animate(
 		{
 			backgroundColor: colors[color],
 		},
