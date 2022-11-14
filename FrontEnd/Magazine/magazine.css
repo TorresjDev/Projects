@@ -55,7 +55,7 @@ hr {
 }
 
 i {
-	color: silver;
+	color: goldenrod;
 }
 
 i:hover {
@@ -171,7 +171,7 @@ p {
 }
 
 .image-wrapper {
-	display: grid;
+	display: table;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: repeat(3, min-content);
 	gap: 2rem;
