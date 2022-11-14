@@ -4,7 +4,7 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import foodRouter from "./router/food.router";
-import userRouter from "./router/login.router";
+import userRouter from "./router/user.router";
 import { dbConnect } from "./configs/database.config";
 dbConnect();
 
