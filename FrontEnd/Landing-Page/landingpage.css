@@ -1,7 +1,5 @@
 /** global element styling **/
 
-@import "https://fonts.googleapis.com/css?family=Lato:400,700";
-
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inspiration&family=Pacifico&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&display=swap");
 
 * {
@@ -37,7 +35,12 @@ header {
 }
 
 nav {
-	font-weight: 400;
+	font-weight: 600;
+}
+
+nav a:hover {
+	font-weight: 1200;
+	color: rgb(227, 0, 0);
 }
 
 nav > ul {
@@ -51,6 +54,11 @@ footer {
 	margin-top: 30px;
 	background-color: silver;
 	padding: 20px;
+}
+
+footer a:hover {
+	font-weight: 501;
+	color: rgb(227, 0, 0);
 }
 
 footer > ul {

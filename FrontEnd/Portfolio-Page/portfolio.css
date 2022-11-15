@@ -4,6 +4,7 @@
 	--main-red: #be3144;
 	--main-blue: #45567d;
 	--main-gray: #303841;
+	--main-maroon: maroon;
 }
 
 /* Base reset */
@@ -142,6 +143,7 @@ img {
 
 .nav-list a:hover {
 	background: var(--main-blue);
+	color: var(--main-maroon);
 }
 
 /* Welcome section */
@@ -208,6 +210,8 @@ img {
 .project {
 	background: var(--main-gray);
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	border: 0.33rem groove maroon;
+
 	border-radius: 2px;
 }
 
@@ -223,7 +227,7 @@ img {
 .project-image {
 	height: calc(100% - 6.8rem);
 	width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .project-title {
@@ -299,8 +303,13 @@ img {
 	transition: transform 0.3s ease-out;
 }
 
+.contact-details i:hover {
+	color: goldenrod;
+}
+
 .contact-details:hover {
 	transform: translateY(8px);
+	color: silver;
 }
 
 /* Footer */
