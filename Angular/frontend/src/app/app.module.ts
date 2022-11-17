@@ -20,6 +20,7 @@ import { TagsComponent } from './components/partials/tags/tags.component';
 import { TitleComponent } from './components/partials/title/title.component';
 import { ToastrModule } from 'ngx-toastr';
 import { TextInputComponent } from './components/partials/text-input/text-input.component';
+import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { TextInputComponent } from './components/partials/text-input/text-input.
     TagsComponent,
     TitleComponent,
     TextInputComponent,
+    RegisterPageComponent,
   ],
   imports: [
     AppRoutingModule,
