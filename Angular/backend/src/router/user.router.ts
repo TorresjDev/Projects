@@ -1,11 +1,10 @@
 import { Router } from "express";
 import { sample_users } from "../data";
-import asyncHandler from "express-async-handler";
 import jwt from "jsonwebtoken";
+import asyncHandler from "express-async-handler";
 import { User, UserModel } from "../models/user.model";
 import { HTTP_BAD_REQUEST } from "../constants/http_status";
 import bcrypt from "bcryptjs";
-
 const router = Router();
 
 router.get(
@@ -27,10 +26,11 @@ router.post(
 	asyncHandler(async (req, res) => {
 		const { email, password } = req.body;
 		const user = await UserModel.findOne({ email, password });
+
 		if (user) {
-			res.send(generateTokenResponse(user));
+			res.send(generateTokenReponse(user));
 		} else {
-			res.status(HTTP_BAD_REQUEST).send("Username or password was not found.");
+			res.status(HTTP_BAD_REQUEST).send("Username or password is invalid!");
 		}
 	}),
 );
@@ -41,7 +41,7 @@ router.post(
 		const { name, email, password, address } = req.body;
 		const user = await UserModel.findOne({ email });
 		if (user) {
-			res.status(HTTP_BAD_REQUEST).send("User already exist, please login");
+			res.status(HTTP_BAD_REQUEST).send("User is already exist, please login!");
 			return;
 		}
 
@@ -57,12 +57,11 @@ router.post(
 		};
 
 		const dbUser = await UserModel.create(newUser);
-
-		res.send(generateTokenResponse(dbUser));
+		res.send(generateTokenReponse(dbUser));
 	}),
 );
 
-const generateTokenResponse = (user: User) => {
+const generateTokenReponse = (user: User) => {
 	const token = jwt.sign(
 		{
 			id: user.id,
