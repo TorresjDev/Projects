@@ -1,141 +1,130 @@
-<DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <link rel="stylesheet" href="landingpage.css" />
-        <script src="https://kit.fontawesome.com/ec1ec1b444.js" crossorigin="anonymous"></script>
-        <!-- <script src="landingpage.js"></script> -->
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./landingpage.css" />
+    <script src="https://kit.fontawesome.com/ec1ec1b444.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <div id="page-wrapper">
-            <header id="header">
-                <div class="logo">
-                    <i class="fab fa-qq" style="
-								font-size: 51px;
-								color: maroon;
-								background: rgb(45, 45, 253);
-								background: radial-gradient(
-									circle,
-									rgba(45, 45, 253, 1) 6%,
-									rgba(118, 0, 185, 1) 82%
-								);
-								border: 0.3rem groove maroon;
-							"></i>
-                </div>
-                <div class="nav" id="nav">
-                    <a class="nav-link" href="#features">Features</a>
-                    <a class="nav-link" href="#now-playing">playing</a>
-                    <a class="nav-link" href="#pricing">Pricing</a>
-                    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </header>
-
-            <section id="hero">
-                <h2>subscribe to our daily content, never miss an event</h2>
-                <form id="form" action="">
-                    <input name="email" id="email" type="email" placeholder="Enter your email address" required="" />
-                    <input id="submit" type="submit" value="Sign Up" class="btn" />
-                </form>
-            </section>
-
-            <div class="container">
-                <section id="features">
-                    <div class="grid">
-                        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-                        <div class="desc">
-                            <h2>Current Events</h2>
-                            <p>
-                                We keep you up to date with the latest current events around the world and within our country.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-                        <div class="desc">
-                            <h2>Free daily Content</h2>
-                            <p>
-                                We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="icon">
-                            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-                        </div>
-                        <div class="desc">
-                            <h2>Quality Assurance</h2>
-                            <p>
-                                For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section id="now-playing">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fdixQDPA2h0?autoplay=true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </section>
-                <section id="pricing">
-                    <div class="product" id="tenor">
-                        <div class="level">Noobs</div>
-                        <h2>$0 (free)</h2>
-                        <ol>
-                            <li>Free membership: (Includes)</li>
-                            <li>Daily News Content.</li>
-                            <li>Online Store Access.</li>
-                            <li>Online Media Platform Access.</li>
-                        </ol>
-                        <button class="btn">Select</button>
-                    </div>
-                    <div class="product" id="bass">
-                        <div class="level">members</div>
-                        <h2>$6</h2>
-                        <ol>
-                            <li>All Noobs Memebership: (Included)</li>
-                            <li>Personal access to our vault.</li>
-                            <li>Access to our learning library.</li>
-                        </ol>
-                        <button class="btn">Select</button>
-                    </div>
-                    <div class="product" id="valve">
-                        <div class="level">brother/sister</div>
-                        <h2>$15</h2>
-                        <ol>
-                            <li>All members Memebership: (Included)</li>
-                            <li>Personal Invations to our vault events</li>
-                            <li>Monlthy Sawg accessories.</li>
-                            <li>Become a part of our global alliance.</li>
-                        </ol>
-                        <button class="btn">Select</button>
-                    </div>
-                </section>
-                <footer>
-                    <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <span>Copyright 2022, DiCalibration</span>
-                </footer>
-            </div>
+<body>
+    <header>
+        <div class="nav" id="navbar">
+            <a href="/Home-page/welcome.html" class="active"><i
+						class="fab fa-qq"
+						style="
+							font-size: 4rem;
+							color: maroon;
+							background: rgb(45, 45, 253);
+							background: radial-gradient(
+								circle,
+								rgba(45, 45, 253, 1) 6%,
+								rgba(118, 0, 185, 1) 82%
+							);
+							border: 0.3rem groove maroon;
+						"
+					></i
+				></a>
+            <a href="#pricing">Plans</a>
+            <a href="#now-playing">Now Playing</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="navbarResize()">
+                <i class="fa fa-bars" style="font-size: 3rem"></i>
+            </a>
         </div>
+    </header>
 
-        <script>
-            function myFunction() {
-                var navbar = document.getElementById("nav");
-                console.log(navbar);
+    <section class="subscribe" id="subscribe">
+        <h2>subscribe to our daily content, never miss an event</h2>
+        <form id="form" action="">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required="" />
+            <input id="submit" type="submit" value="Sign Up" class="btn" />
+        </form>
+    </section>
 
-                if (navbar.className === "nav") {
-                    navbar.className += " responsive";
-                    console.log("nav hambuger success");
-                } else {
-                    navbar.className = "nav";
-                    console.log("nav hambuger didnt show");
-                }
-            }
-        </script>
-    </body>
+    <div class="container">
+        <section id="about">
+            <div class="block">
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="desc">
+                    <h2>Current Events</h2>
+                    <p>
+                        We keep you up to date with the latest current events around the world and within our country.
+                    </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+                <div class="desc">
+                    <h2>Free daily Content</h2>
+                    <p>
+                        We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                    </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="icon">
+                    <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                </div>
+                <div class="desc">
+                    <h2>Quality Assurance</h2>
+                    <p>
+                        For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="now-playing">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fdixQDPA2h0?autoplay=true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="product" id="tenor">
+                <div class="level">Noobs</div>
+                <h2>$0 (free)</h2>
+                <ol>
+                    <li>Free membership: (Includes)</li>
+                    <li>Daily News Content.</li>
+                    <li>Online Store Access.</li>
+                    <li>Online Media Platform Access.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="bass">
+                <div class="level">members</div>
+                <h2>$6</h2>
+                <ol>
+                    <li>All Noobs Memebership: (Included)</li>
+                    <li>Personal access to our vault.</li>
+                    <li>Access to our learning library.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="valve">
+                <div class="level">brother/sister</div>
+                <h2>$15</h2>
+                <ol>
+                    <li>All members Memebership: (Included)</li>
+                    <li>Invations to our vault events</li>
+                    <li>Monlthy Sawg accessories.</li>
+                    <!-- <li>Become a part of our global alliance.</li> -->
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span>Copyright 2022, DiCalibration</span>
+        </footer>
+    </div>
 
-    </html>
-</DOCTYPE>
+    <script src="./welcome.js"></script>
+</body>
+
+</html>
