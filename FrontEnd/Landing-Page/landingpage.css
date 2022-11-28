@@ -114,7 +114,7 @@ body {
         font-size: 1em;
     }
     .social-icons {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -221,10 +221,6 @@ footer>span {
     border: 0.1rem groove maroon;
 }
 
-.product h2 {
-    color: gold;
-}
-
 .product>.level {
     background: rgb(45, 45, 253);
     background: radial-gradient( circle, rgba(45, 45, 253, 1) 6%, rgba(118, 0, 185, 1) 82%);
@@ -237,7 +233,8 @@ footer>span {
 }
 
 .product>h2 {
-    margin-top: 15px;
+    margin-top: 3px;
+    color: gold;
 }
 
 .product>ol {
