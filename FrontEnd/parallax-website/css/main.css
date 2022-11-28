@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond&family=Inspiration&family=Ledger&family=Pacifico&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	/* border: solid 5px red; */
+}
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+	font-family: "Inspiration";
+	font-size: 3rem;
+	font-weight: bolder;
+}
+
+span {
+	font-family: "Arimo";
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+video source {
+	width: 100%;
+}
+
+/* Scrolling Effect */
+.parallax-img1,
+.parallax-img2,
+.parallax-img3 {
+	position: relative;
+	opacity: 0.93;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/*
+  fixed = parallax
+  scroll = normal
+  */
+	background-attachment: fixed;
+}
+
+/* import images and position them */
+.parallax-img1 {
+	background-image: url("../img/img-i.jpg");
+	min-height: 100%;
+}
+.parallax-img1 p {
+	font-size: 5rem;
+	font-weight: 900;
+	font-family: "Inspiration";
+	font-style: italic;
+	text-transform: capitalize;
+	-webkit-text-stroke-width: thin;
+	color: goldenrod;
+}
+
+.parallax-img3 {
+	background-image: url("../img/jump.jpg");
+	min-height: 125vh;
+}
+
+.parallax-img2 {
+	background-image: url("../img/img-ii.jpg");
+	min-height: 100vh;
+}
+
+/* Header Video Conent styling */
+.v-header {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	background-color: rgb(0, 0, 64);
+}
+
+.container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.fullscreen-video-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+	min-width: 100%;
+	min-height: 100%;
+	/* margin-bottom: -500px;
+	margin-left: -290px; */
+}
+
+.header-overlay {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #d3d3d3;
+	z-index: 1;
+	opacity: 0.15;
+}
+
+.header-content {
+	/* border:  solid 5px white; */
+	z-index: 2;
+	max-height: 100vh;
+	max-width: 100vw;
+	margin: 0 auto;
+}
+
+.header-content h2 {
+	font-size: 3rem;
+	margin-bottom: 0;
+	/* align-content: center; */
+}
+
+.header-content p {
+	font-size: 1.5rem;
+	display: block;
+	padding-bottom: 2rem;
+}
+
+/* Logo & name */
+
+.logo img {
+	/* background-color: lightgray; */
+	margin-top: 30px;
+	max-width: 15vw;
+	/* margin-left: -100px; */
+}
+
+.logo-name .logo-detail {
+	/* background-color: lightblue; */
+	max-width: 100vw;
+	height: 25vh;
+	position: sticky;
+	bottom: 320px;
+	margin: 3rem;
+}
+
+.logo-name h2 {
+	color: rgb(82, 0, 0);
+	font-weight: bolder;
+	font-size: 3.9rem;
+}
+
+.logo-name p {
+	color: black;
+	font-weight: 900;
+}
+
+.logo-name img {
+	/* background-color: lightblue; */
+	max-width: 100vw;
+	height: 30vh;
+	position: relative;
+	bottom: 320px;
+}
+
+/* About Me Button */
+.logo-name a {
+	/* background-color: lightgreen; */
+	display: block;
+	left: 0;
+}
+
+.btn {
+	color: #fff;
+	font-size: 1.2rem;
+	text-decoration: none;
+	position: relative;
+	bottom: 320px;
+	left: 28px;
+}
+
+/* Hover Shaking effect */
+.btn:hover,
+.ptext .border img:hover {
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+/* Section Styling */
+.section {
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.article {
+	padding: 50px 80px;
+	grid-column-start: none;
+	grid-row-end: auto;
+}
+
+.article .topic {
+	font-family: "Ledger";
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 0px 82px;
+}
+
+.section-light {
+	background-color: rgb(143, 122, 219);
+	color: rgb(0, 0, 0);
+	display: flex;
+	/* grid-auto-flow: row; */
+	padding: 1rem;
+}
+
+.section-dark {
+	background-color: rgb(2, 108, 101);
+	color: #ddd;
+}
+
+.side-content {
+	display: inline-grid;
+	white-space: pre-line;
+	flex: none;
+	/* vector-effect: non-scaling-stroke; */
+}
+
+.contact-section-header {
+	display: inline-;
+}
+
+@media only screen and (max-width: 720px) {
+	.side-content {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Contact section */
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 80vh;
+	padding: 0 2rem;
+	background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+	font-size: 3rem;
+}
+
+@media (max-width: 28.75em) {
+	.contact-section-header > h2 {
+		font-size: 4rem;
+	}
+}
+
+.contact-section-header > p {
+	font-style: italic;
+}
+
+/* .contact-links {
+	display: grid;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 980px;
+	margin-top: 4rem;
+	flex-wrap: wrap;
+} */
+
+.contact-details {
+	font-size: 2.1rem;
+	text-shadow: 2px 2px 1px #1f1f1f;
+	transition: transform 0.3s ease-out;
+	color: #fff;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+.contact-details i {
+	color: goldenrod;
+}
+
+.contact-details:hover {
+	transform: translateY(8px);
+	color: silver;
+}
+
+/* Hover Shaking effect */
+.contact-details:hover {
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+/* image text and content styling */
+.ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border img {
+	position: relative;
+	top: -195px;
+	left: -20px;
+	max-height: 390px;
+	opacity: 0.9;
+}
+
+.ptext .border.trans {
+	background-color: transparent;
+}
+
+/* Rating styling */
+.checked {
+	color: orange;
+}
+
+.rating {
+	display: inline-block;
+	padding: 20px;
+}
+
+/* skills */
+.skill-section {
+	background-color: lightcyan;
+}
+
+.skill-container {
+	width: 100%;
+	font-weight: 900;
+	background-color: silver;
+}
+
+.skills {
+	text-align: right;
+	padding-right: 20px;
+	line-height: 40px;
+	color: maroon;
+}
+
+.skill-name {
+	text-align: left;
+	margin: 15px 0;
+}
+
+.skill-section h2 {
+	color: black;
+}
+.skill-name,
+.skill-container {
+	text-align: left;
+	margin: 15px 0;
+	font-family: "Silkscreen";
+	font-weight: bold;
+	color: black;
+}
+
+.back-end {
+	width: 75%;
+	background-color: goldenrod;
+}
+.front-end {
+	width: 85%;
+	background-color: goldenrod;
+}
+.testing {
+	width: 70%;
+	background-color: goldenrod;
+}
+.design {
+	width: 80%;
+	background-color: goldenrod;
+}
+.learn {
+	width: 99%;
+	background-color: goldenrod;
+}
+
+/* Mobile friendly */
+@media (max-width: 960px) {
+	.fullscreen-video-wrap video {
+		min-width: 116%;
+		min-height: 100%;
+		margin-bottom: -500px;
+		margin-left: -520px;
+	}
+}
+
+@media (max-width: 720px) {
+	.fullscreen-video-wrap video {
+		min-width: 116%;
+		min-height: 100%;
+		margin-bottom: -500px;
+		margin-left: -640px;
+	}
+}
+
+@media (max-width: 568px) {
+	.fullscreen-video-wrap video {
+		margin-left: -800px;
+	}
+	.header-content {
+		max-width: 400px;
+	}
+	.container {
+		max-width: 568px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin: auto;
+	}
+	.parallax-img1,
+	.parallax-img2,
+	.parallax-img3 {
+		background-attachment: scroll;
+	}
+	.parallax-img2 .ptext .border img {
+		max-width: 370px;
+	}
+	.parallax-img3 .ptext .border img {
+		max-width: 370px;
+	}
+	.ptext .border img {
+		position: relative;
+		top: -180px;
+		left: 20px;
+		max-width: 500px;
+	}
+	.logo {
+		max-width: 100px;
+	}
+	.logo-name img {
+		position: relative;
+		left: -110px;
+		bottom: 200px;
+		max-width: 600px;
+	}
+	.logo img {
+		position: relative;
+		top: 80px;
+		max-width: 15vw;
+	}
+	.btn {
+		bottom: 210px;
+		left: -8px;
+	}
+	.rating {
+		display: block;
+	}
+	.rating .skill {
+		display: block;
+	}
+}
