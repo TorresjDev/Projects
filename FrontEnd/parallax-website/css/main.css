@@ -270,28 +270,28 @@ video source {
 .section-final {
     background-color: rgb(143, 122, 219);
     color: rgb(0, 0, 0);
-    display: flex;
     /* grid-auto-flow: row; */
-    padding: 1rem;
+    padding-bottom: 1rem;
     flex-direction: row;
     text-align-last: center;
+}
+
+.side-content {
+    /* white-space: pre-line; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* vector-effect: non-scaling-stroke; */
 }
 
 .contact-links {
     inline-size: max-content;
     text-align-last: start;
+    display: flex;
 }
 
 .contact-links a {
     inline-size: max-content;
-}
-
-.side-content {
-    white-space: pre-line;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* vector-effect: non-scaling-stroke; */
 }
 
 .contact-section-header {
@@ -348,16 +348,28 @@ video source {
     transition: transform 0.3s ease-out;
     color: #fff;
     text-decoration: none;
-    padding-right: 10px;
+    padding-right: 1.5rem;
+    display: flex;
 }
 
 .contact-details i {
     color: goldenrod;
 }
 
+.contact-details span {
+    color: rgb(0, 0, 0);
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-details span:hover {
+    /* transform: translateY(8px); */
+    color: silver;
+}
+
 .contact-details:hover {
     transform: translateY(8px);
-    color: silver;
+    /* color: silver; */
 }
 
 
