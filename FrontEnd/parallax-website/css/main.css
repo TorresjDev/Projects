@@ -263,16 +263,18 @@ video source {
 .section-light {
     background-color: rgb(143, 122, 219);
     color: rgb(0, 0, 0);
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: row; */
     /* grid-auto-flow: row; */
     padding: 1rem;
-    flex-direction: row;
     text-align-last: center;
 }
 
 .section-dark {
     background-color: rgb(2, 108, 101);
     color: #ddd;
+    display: flex;
+    flex-direction: row;
 }
 
 .section-final {
@@ -360,24 +362,15 @@ video source {
     display: flex;
 }
 
-.contact-details i {
-    color: goldenrod;
-}
+
+/* .contact-details i {
+    color: black;
+} */
 
 .contact-details span {
     color: rgb(0, 0, 0);
     padding-left: 1rem;
     font-size: 1.5rem;
-}
-
-.contact-details span:hover {
-    /* transform: translateY(8px); */
-    color: silver;
-}
-
-.contact-details:hover {
-    transform: translateY(8px);
-    /* color: silver; */
 }
 
 
@@ -388,6 +381,8 @@ video source {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
+    color: silver;
+    transform: translateY(8px);
 }
 
 
@@ -518,11 +513,11 @@ video source {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-gap: 3rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 30.625em) {
@@ -564,7 +559,7 @@ video source {
 }
 
 .random-quote {
-    display: flex;
+    padding-top: 75%;
 }
 
 .btn {
@@ -577,7 +572,7 @@ video source {
     font-size: 2rem;
     background: var(--main-gray);
     transition: background 0.3s ease-out;
-    display: inline-flex;
+    border: 0.33rem groove silver;
     bottom: auto;
 }
 
