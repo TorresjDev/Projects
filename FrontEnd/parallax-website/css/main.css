@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond&family=Inspiration&family=Ledger&family=Pacifico&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&display=swap");
 :root {
     --main-white: #f0f0f0;
-    --main-red: #be3144;
+    --main-red: #78101e;
     --main-blue: #45567d;
     --main-gray: #303841;
     --main-maroon: maroon;
@@ -15,6 +15,7 @@
 body,
 html {
     height: 100%;
+    width: auto;
     margin: 0;
     font-size: 18px;
     font-weight: 400;
@@ -118,8 +119,6 @@ video source {
 .fullscreen-video-wrap video {
     min-width: 100%;
     min-height: 100%;
-    /* margin-bottom: -500px;
-	margin-left: -290px; */
 }
 
 .header-overlay {
@@ -134,7 +133,6 @@ video source {
 }
 
 .header-content {
-    /* border:  solid 5px white; */
     z-index: 2;
     max-height: 100vh;
     max-width: 100vw;
@@ -144,7 +142,6 @@ video source {
 .header-content h2 {
     font-size: 3rem;
     margin-bottom: 0;
-    /* align-content: center; */
 }
 
 .header-content p {
@@ -157,21 +154,9 @@ video source {
 /* Logo & name */
 
 .logo img {
-    /* background-color: lightgray; */
     margin-top: 30px;
     max-width: 15vw;
-    /* margin-left: -100px; */
 }
-
-
-/* .logo-name .logo-detail {
-    background-color: lightblue;
-    max-width: 100vw;
-    height: 25vh;
-    position: sticky;
-    bottom: 320px;
-    margin: 3rem;
-} */
 
 .logo-name h2 {
     color: rgb(82, 0, 0);
@@ -186,7 +171,6 @@ video source {
 }
 
 .logo-name img {
-    /* background-color: lightblue; */
     max-width: 100vw;
     height: 30vh;
     position: relative;
@@ -197,7 +181,6 @@ video source {
 /* About Me Button */
 
 .logo-name a {
-    /* background-color: lightgreen; */
     display: contents;
     left: 0;
     color: grey;
@@ -288,6 +271,26 @@ video source {
     padding-bottom: 1rem;
     flex-direction: row;
     text-align-last: center;
+}
+
+.about-me {
+    display: flex;
+    place-content: space-between;
+}
+
+.about-me aside {
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.about-me aside button:hover {
+    background-color: rgb(82, 0, 0);
+    color: snow;
+    font-weight: bold;
+}
+
+.about-me .profile-link {
+    padding-top: 2rem;
 }
 
 .side-content {
@@ -643,7 +646,23 @@ video source {
 
 /* Mobile friendly */
 
-@media (max-width: 1020px) {
+@media (max-width: 2050px) {
+    body {
+        font-size: 14px;
+        line-height: 2.6em;
+    }
+    .fullscreen-video-wrap {
+        /* min-width: 116%; */
+        min-height: fit-content;
+        /* margin-bottom: -500px;
+        margin-left: -520px; */
+    }
+    .section .article {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 1075px) {
     body {
         font-size: 14px;
         line-height: 2.6em;
@@ -656,10 +675,38 @@ video source {
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1075px) {
     body {
         font-size: 14px;
         line-height: 2.6em;
+    }
+    .fullscreen-video-wrap {
+        /* min-width: 116%; */
+        min-height: fit-content;
+        /* margin-bottom: -500px;
+        margin-left: -520px; */
+    }
+}
+
+@media (max-width: 1020px) {
+    body {
+        font-size: 14px;
+        line-height: 2.6em;
+    }
+    .fullscreen-video-wrap {
+        /* min-width: 116%; */
+        min-height: fit-content;
+        /* margin-bottom: -500px;
+        margin-left: -520px; */
+    }
+    .section .article {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 960px) {
+    html {
+        width: fit-content;
     }
     .fullscreen-video-wrap {
         /* min-width: 116%; */

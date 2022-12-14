@@ -37,11 +37,24 @@
     </header>
 
     <section class="section-light" id="about">
-        <h2>What I've done?</h2>
-        <p class="topic">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quisquam voluptatum quidem praesentium temporibus eaque commodi nihil, rerum saepe in perspiciatis. Odit, blanditiis eius debitis, quisquam et optio! Iure nesciunt commodi nulla aliquam
-            culpa fugit nihil laboriosam soluta repellat consequuntur magnam repudiandae odio reiciendis, veniam illo, modi quibusdam impedit deleniti?
-        </p>
+        <h2>Who am I?</h2>
+        <div class="about-me">
+            <aside>
+                <p>PDF Resume File:</p>
+                <a href="files/resume.pdf" download>
+                    <button style='font-size:18px'>Download file <i class='fas fa-download'></i></button>
+                </a>
+            </aside>
+            <a href="https://www.linkedin.com/in/torresdev/" target="_blank" class="contact-details profile-link">
+                <i class="fab fa-linkedin"></i>
+                <span>torresdev</span>
+            </a>
+            <a id="profile-link" href="https://github.com/TorresjDev" target="_blank" class="contact-details profile-link">
+                <i class="fab fa-github"></i>
+                <span>TorresjDev</span>
+            </a>
+        </div>
+
     </section>
 
     <div class="parallax-img2">
@@ -66,7 +79,7 @@
         <div class="skill-container">
             <div class="skills back-end">75%</div>
         </div>
-        <p class="skill-name"><i class="fa-sharp fa-solid fa-gears"></i> Testing (DevTools, Axios, Postman)</p>
+        <p class="skill-name"><i class="fa fa-briefcase"></i> Testing (DevTools, Axios, Postman)</p>
         <div class="skill-container">
             <div class="skills testing">70%</div>
         </div>
@@ -86,7 +99,7 @@
 
     <div class="section section-dark">
         <article class="article">
-            <h2 class="projects-section-header">These are some of my projects</h2>
+            <h2 class="projects-section-header">Projects I've done.</h2>
 
             <div class="projects-grid">
                 <a href="https://codepen.io/TorresjDev/pen/yLjWZWP" target="_blank" class="project project-title">
@@ -128,14 +141,7 @@
         <aside class="side-content">
             <h2 class="contact-section-header">Let's work together...</h2>
             <div class="contact-links">
-                <a href="https://www.linkedin.com/in/torresdev/" target="_blank" class="contact-details">
-                    <i class="fab fa-linkedin"></i>
-                    <span>torresdev</span>
-                </a>
-                <a id="profile-link" href="https://github.com/TorresjDev" target="_blank" class="contact-details">
-                    <i class="fab fa-github"></i>
-                    <span>TorresjDev</span>
-                </a>
+
                 <a onclick="copyEmail()" href="mailto:j.torres3.dev@gmail.com" class=" contact-details">
                     <i class="fa fa-paper-plane"></i>
                     <span id="email">
