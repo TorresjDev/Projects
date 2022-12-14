@@ -40,6 +40,10 @@ video source {
     width: 100%;
 }
 
+#email {
+    padding-bottom: 1rem;
+}
+
 
 /* Scrolling Effect */
 
@@ -373,6 +377,10 @@ video source {
     font-size: 1.5rem;
 }
 
+.contact-details span:hover {
+    color: silver;
+}
+
 
 /* Hover Shaking effect */
 
@@ -381,8 +389,48 @@ video source {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
-    color: silver;
+    color: maroon;
     transform: translateY(8px);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    display: none;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    display: inline;
+    opacity: 1;
 }
 
 
@@ -445,7 +493,7 @@ video source {
 
 .skill-name {
     text-align: left;
-    margin: 15px 0;
+    margin: 9px 0;
 }
 
 .skill-section h2 {
@@ -455,7 +503,7 @@ video source {
 .skill-name,
 .skill-container {
     text-align: left;
-    margin: 15px 0;
+    margin: 9px 0;
     font-family: "Silkscreen";
     font-weight: bold;
     color: black;
@@ -549,6 +597,7 @@ video source {
     /* height: calc(100% - 6.8rem); */
     border: 0.1rem groove maroon;
     width: 100%;
+    max-width: 90%;
     object-fit: contain;
 }
 
@@ -556,10 +605,11 @@ video source {
     font-size: 1.3rem;
     padding: 1rem 0.5rem;
     color: var(--main-white);
+    max-height: 90%;
 }
 
 .random-quote {
-    padding-top: 75%;
+    padding-top: 70%;
 }
 
 .btn {
