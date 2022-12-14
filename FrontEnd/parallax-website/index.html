@@ -62,17 +62,17 @@
         <div class="skill-container">
             <div class="skills front-end">85%</div>
         </div>
-        <p class="skill-name"><i class="fa fa-cogs" aria-hidden="true"></i> Back-End (C#, SSMS, MongoDB)</p>
+        <p class="skill-name"><i class="fa fa-cogs" aria-hidden="true"></i> Back-End (C#, SQL, MongoDB, Node.js)</p>
         <div class="skill-container">
             <div class="skills back-end">75%</div>
         </div>
-        <p class="skill-name"><i class="fa fa-shield" aria-hidden="true"></i> Testing (DevTools, Postman)</p>
+        <p class="skill-name"><i class="fa-sharp fa-solid fa-gears"></i> Testing (DevTools, Axios, Postman)</p>
         <div class="skill-container">
             <div class="skills testing">70%</div>
         </div>
         <p class="skill-name"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Learning a new skill</p>
         <div class="skill-container">
-            <div class="skills learn">99%</div>
+            <div class="skills learn">115%</div>
         </div>
     </div>
 
@@ -136,9 +136,11 @@
                     <i class="fab fa-github"></i>
                     <span>TorresjDev</span>
                 </a>
-                <a href="mailto:j.torres3.dev@gmail.com" class="contact-details">
+                <a onclick="copyEmail()" href="mailto:j.torres3.dev@gmail.com" class=" contact-details">
                     <i class="fa fa-paper-plane"></i>
-                    <span>j.torres3.dev@gmail.com</span>
+                    <span id="email">
+                          j.torres3.dev@gmail.com
+                    </span>
                 </a>
                 <a href="tel:760-515-9294" class="contact-details">
                     <i class="fas fa-mobile-alt"></i>
@@ -150,6 +152,14 @@
     <footer>
 
     </footer>
+    <script>
+        var copyText = document.getElementById("email").innerText;
+
+        function copyEmail() {
+            navigator.clipboard.writeText(copyText);
+            alert("Copied email: " + copyText);
+        }
+    </script>
 </body>
 
 </html>
