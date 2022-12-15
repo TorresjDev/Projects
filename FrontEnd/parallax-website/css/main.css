@@ -714,6 +714,9 @@ video source {
         /* margin-bottom: -500px;
         margin-left: -520px; */
     }
+    .header-content {
+        flex: auto;
+    }
 }
 
 @media (max-width: 720px) {
