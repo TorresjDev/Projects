@@ -276,6 +276,7 @@ video source {
 .about-me {
     display: flex;
     place-content: space-between;
+    padding: 0 3rem;
 }
 
 .about-me aside {
@@ -585,6 +586,7 @@ video source {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border: 0.33rem groove maroon;
     border-radius: 2px;
+    inline-size: -webkit-fill-available;
 }
 
 .code {
@@ -646,7 +648,7 @@ video source {
 
 /* Mobile friendly */
 
-@media (max-width: 2050px) {
+@media (max-width: 2250px) {
     body {
         font-size: 14px;
         line-height: 2.6em;
@@ -659,6 +661,32 @@ video source {
     }
     .section .article {
         width: fit-content;
+        flex: auto;
+        padding: 0;
+    }
+    .projects-grid {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1250px) {
+    body {
+        font-size: 14px;
+        line-height: 2.6em;
+    }
+    .fullscreen-video-wrap {
+        /* min-width: 116%; */
+        min-height: fit-content;
+        /* margin-bottom: -500px;
+        margin-left: -520px; */
+    }
+    .section .article {
+        width: fit-content;
+        flex: auto;
+        padding: 0;
+    }
+    .projects-grid {
+        margin-bottom: 0;
     }
 }
 
