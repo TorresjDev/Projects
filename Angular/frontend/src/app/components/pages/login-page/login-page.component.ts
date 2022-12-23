@@ -27,6 +27,7 @@ export class LoginPageComponent implements OnInit {
 
     this.returnUrl = this.activatedRoute.snapshot.queryParams.returnUrl;
   }
+
   get fc() {
     return this.loginForm.controls;
   }
@@ -34,12 +35,9 @@ export class LoginPageComponent implements OnInit {
   submit() {
     this.isSubmitted = true;
     if (this.loginForm.invalid) return;
-    // alert(`email: ${this.fc.email.value}, password: ${this.fc.password.value}`);
+
     this.userService
-      .login({
-        email: this.fc.email.value,
-        password: this.fc.password.value,
-      })
+      .login({ email: this.fc.email.value, password: this.fc.password.value })
       .subscribe(() => {
         this.router.navigateByUrl(this.returnUrl);
       });
