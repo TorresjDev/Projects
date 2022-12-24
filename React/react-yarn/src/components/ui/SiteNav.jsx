@@ -19,7 +19,7 @@ const SiteNav = () => {
 
 	return (
 		<Navbar
-			className="navbar"
+			className="nav"
 			fixed="top"
 			SiteNav
 			expand="lg"

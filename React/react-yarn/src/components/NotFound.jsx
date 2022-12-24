@@ -6,17 +6,18 @@ import React from "react";
 const NotFound = () => {
 	const imgStyle = {
 		width: "33%",
-		height: "33%",
+		height: "30%",
 		paddingTop: "25px",
 		alignSelf: "center",
 	};
 
 	return (
 		<Card className="text-center">
+			<Card.Header>Site Un-Available</Card.Header>
+
 			<Card.Img fluid variant="top" style={imgStyle} src={SiteLogo} />
 			<Card.Body>
 				<Card.Title>Sorry, Page not found</Card.Title>
-				<Card.Text>Site Un-Available</Card.Text>
 				<Button href="/" variant="primary">
 					Return Home
 				</Button>

@@ -2,11 +2,9 @@ import React from "react";
 
 function Footer() {
 	return (
-		<React.Fragment>
-			<footer>
-				<p>© Created</p>
-			</footer>
-		</React.Fragment>
+		<footer className="footer">
+			<p className="footer-text">© Created DEC-2022</p>
+		</footer>
 	);
 }
 

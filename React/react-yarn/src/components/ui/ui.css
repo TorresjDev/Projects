@@ -1,4 +1,8 @@
-/** SiteNav START */
+/*? SiteNav START */
+
+.nav {
+    border-bottom: 0.5rem groove maroon;
+}
 
 .nav-icon {
     font-weight: 900;
@@ -17,12 +21,12 @@
 
 /*! SiteNav END */
 
+
+/*? Home START */
+
 .text-center {
     margin: 9% 0;
 }
-
-
-/* Landing Page */
 
 .welcome {
     display: flex;
@@ -43,29 +47,27 @@
 }
 
 
-/* Footer */
+/*! Home END */
 
 
-/* footer {
+/*? Footer START */
+
+footer {
     font-weight: 300;
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
+    justify-content: end;
+    padding-bottom: 100%;
     background: var(--main-gray);
-    border-top: 4px solid var(--main-red);
+    border-top: 6px groove var(--main-red);
 }
 
 footer>p {
     margin: 2rem;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-style: italic;
 }
 
-footer i {
-    vertical-align: middle;
-} */
 
-@media (max-width: 28.75em) {
-    /* footer {
-        flex-direction: column;
-        text-align: center;
-    } */
-}
+/*! Footer END */
