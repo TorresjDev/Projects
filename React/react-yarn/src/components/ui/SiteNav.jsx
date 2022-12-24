@@ -1,10 +1,21 @@
 import React from "react";
 import { Container, Navbar, NavDropdown, Nav } from "react-bootstrap";
-
+import styled from "styled-components";
+import { Home } from "@styled-icons/boxicons-regular/Home";
 const SiteNav = () => {
 	// const goToPage = (e) => {
 	// 	console.log(e.currentTarget.dataset.page);
 	// };
+	const HomeStyled = styled(Home)`
+		color: black;
+		width: 2rem;
+		padding-bottom: 0.5rem;
+		padding-left: 0.5rem;
+		&:hover {
+			color: maroon;
+			width: 2.5rem;
+		}
+	`;
 
 	return (
 		<Navbar
@@ -16,8 +27,9 @@ const SiteNav = () => {
 			variant="light"
 		>
 			<Container className="nav-list">
-				<Navbar.Brand href="/" icon="">
-					React-Bootstrap
+				<Navbar.Brand href="/" className="nav-icon">
+					<HomeStyled />
+					&nbsp; Welcome
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
@@ -36,7 +48,9 @@ const SiteNav = () => {
 						</NavDropdown>
 					</Nav>
 					<Nav variant="tabs" bg="success">
-						<Nav.Link href="/contact">Contact</Nav.Link>
+						<Nav.Link href="/contact" className="nav-link">
+							Contact
+						</Nav.Link>
 						{/* <Nav.Link eventKey={2} href="#memes">
               Dank memes
             </Nav.Link> */}
