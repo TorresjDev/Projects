@@ -1,43 +1,25 @@
-/* nav */
+/** SiteNav START */
 
-@media (max-width: 28.75em) {
-    /* .nav {
-        justify-content: center;
-    }
-    .nav-list {
-        margin: 0 1rem;
-    } */
+.nav-icon {
+    font-weight: 900;
+    font-style: italic;
 }
 
-.navbar {
-    display: flex;
-    /* font-size: 3rem;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100%;
-    background: var(--main-red);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10; */
+.nav-link {
+    font-style: italic;
 }
+
+
+/* .navbar-icon:hover {
+    color: maroon;
+} */
+
+
+/*! SiteNav END */
 
 .text-center {
     margin: 9% 0;
 }
-
-
-/* 
-.nav-list {
-	display: flex;
-	margin-right: 2rem;
-}
-
-nav Link {
-	display: block;
-	font-size: 16px;
-	padding: 4rem;
-	margin-left: 16px;
-	text-decoration: none;
-} */
 
 
 /* Landing Page */

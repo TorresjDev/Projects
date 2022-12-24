@@ -4,9 +4,16 @@ import SiteLogo from "../img/site-unavailable-xsm.jpg";
 import React from "react";
 
 const NotFound = () => {
+	const imgStyle = {
+		width: "33%",
+		height: "33%",
+		paddingTop: "25px",
+		alignSelf: "center",
+	};
+
 	return (
 		<Card className="text-center">
-			<Card.Img fluid variant="top" src={SiteLogo} />
+			<Card.Img fluid variant="top" style={imgStyle} src={SiteLogo} />
 			<Card.Body>
 				<Card.Title>Sorry, Page not found</Card.Title>
 				<Card.Text>Site Un-Available</Card.Text>
