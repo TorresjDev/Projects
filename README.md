@@ -63,7 +63,7 @@
   </a>    
 </div>
 
-- **_Web Application Project_**
+- **_Responsive Mobile/Web Application Project_**
   > - _Created reuseable components using React-App_
   <!-- > - _Created models for transfering data back & forth from the database to the controller._
   > - _Created controllers to run the request and handle data properly between model & view._ -->
