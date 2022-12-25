@@ -1,5 +1,6 @@
 /* Custom properties/variables  */
 
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond&family=Inspiration&family=Ledger&family=Pacifico&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&display=swap");
 :root {
     --main-white: #f0f0f0;
     --main-red: #9d1628;
@@ -10,16 +11,18 @@
 * {
     margin: 0;
     padding: 0;
+    /* font-family: Silkscreen, Impact, sans-serif; */
 }
 
-*,
+
+/* *,
 *::before,
 *::after {
     box-sizing: inherit;
-}
+} */
 
 html {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     scroll-behavior: smooth;
 }
 
@@ -59,29 +62,6 @@ body {
     font-weight: 400;
     line-height: 1.2;
     color: var(--main-white);
-}
-
-h1,
-h2 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    text-align: center;
-}
-
-h1 {
-    font-size: 6rem;
-}
-
-h2 {
-    font-size: 4.2rem;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 img {

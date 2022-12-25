@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
-import SiteLogo from "../img/site-unavailable-xsm.jpg";
+import SiteLogo from "../img/not-found/site-unavailable-xsm.jpg";
 import React from "react";
 
 const NotFound = () => {

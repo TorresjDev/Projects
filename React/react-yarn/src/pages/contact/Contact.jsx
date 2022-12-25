@@ -5,9 +5,15 @@ import { Linkedin, Github, Mailbox, Telephone } from "@styled-icons/bootstrap";
 import "./contact.css";
 
 const Contact = () => {
+	const iconStyle = { color: "maroon", width: "3rem" };
+	// styled(Linkedin)`
+	// width: 2rem;
+
+	// `;
+
 	return (
 		<React.Fragment>
-			<Container className="pt-5">
+			<Container className="py-5">
 				<Row className="pt-4">
 					<Col>
 						<h1 className="display-3">Let's work together...</h1>
@@ -20,7 +26,7 @@ const Contact = () => {
 						target="_blank"
 						class="btn contact-details"
 					>
-						<Linkedin /> torresdev
+						<Linkedin style={iconStyle} /> torresdev
 					</Link>
 					<Link
 						id="profile-link"
@@ -28,16 +34,16 @@ const Contact = () => {
 						target="_blank"
 						class="btn contact-details"
 					>
-						<Github /> TorresjDev
+						<Github style={iconStyle} /> TorresjDev
 					</Link>
 					<Link
 						href="mailto:j.torres3.dev@gmail.com"
 						class="btn contact-details"
 					>
-						<Mailbox /> Send email
+						<Mailbox style={iconStyle} /> Send email
 					</Link>
 					<Link href="tel:760-515-9294" class="btn contact-details">
-						<Telephone /> Call me
+						<Telephone style={iconStyle} /> Call me
 					</Link>
 				</Row>
 			</Container>
