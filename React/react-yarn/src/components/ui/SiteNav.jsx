@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Navbar, NavDropdown, Nav } from "react-bootstrap";
 import styled from "styled-components";
 import { Home } from "@styled-icons/boxicons-regular/Home";
-const SiteNav = (props) => {
+const SiteNav = () => {
 	// const goToPage = (e) => {
 	// 	console.log(e.currentTarget.dataset.page);
 	// };
@@ -18,14 +18,7 @@ const SiteNav = (props) => {
 	`;
 
 	return (
-		<Navbar
-			className="nav"
-			fixed="top"
-			SiteNav
-			expand="lg"
-			bg="info"
-			variant="light"
-		>
+		<Navbar className="nav" fixed="top" expand="lg" bg="info" variant="light">
 			<Container className="nav-list">
 				<Navbar.Brand href="/" className="nav-icon">
 					<HomeStyled />

@@ -14,7 +14,7 @@ function App() {
 		<React.Fragment>
 			<Router>
 				<SiteNav></SiteNav>
-				<Container className="app">
+				<Container fluid className="app">
 					<Routes>
 						<Route exact path="/" element={<Home />} />
 						<Route exact path="/contact" element={<Contact />} />

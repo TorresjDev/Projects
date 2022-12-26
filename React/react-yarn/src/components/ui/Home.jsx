@@ -20,9 +20,9 @@ function Home(props) {
 	return (
 		<React.Fragment>
 			<Container className="container home-main">
-				<div class="home-overlay"></div>
+				<div className="home-overlay"></div>
 				<video src={videoBg} autoPlay loop muted />
-				<div class="home-content">
+				<div className="home-content">
 					<a href="/parallax-website/index.html">
 						<img src={moonImg} alt="logo" />
 					</a>
