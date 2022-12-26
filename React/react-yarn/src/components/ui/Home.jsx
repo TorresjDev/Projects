@@ -1,12 +1,25 @@
 import React from "react";
 import videoBg from "../../vid/sunrise.mp4";
 import moonImg from "../../img/home/moon-img-iii.png";
+import styled from "styled-components";
+import { ChevronDownCircle } from "@styled-icons/ionicons-outline/ChevronDownCircle";
+import { Container } from "react-bootstrap";
+
 function Home(props) {
+	const ChevDownStyle = styled(ChevronDownCircle)`
+		color: black;
+		width: 5rem;
+		opacity: 70%;
+		&:hover {
+			color: maroon;
+			width: 6rem;
+		}
+	`;
 	// console.log(props);
 	// const user = props.user;
 	return (
 		<React.Fragment>
-			<div className="container home-main">
+			<Container className="container home-main">
 				<div class="home-overlay"></div>
 				<video src={videoBg} autoPlay loop muted />
 				<div class="home-content">
@@ -15,15 +28,12 @@ function Home(props) {
 					</a>
 					<h2>Jesus Torres</h2>
 					<p>Software Engineer</p>
-					<a
-						href="#about"
-						class="fa fa-chevron-circle-down fa-5x"
-						style={{ opacity: "10%" }}
-					>
-						Scroll
-					</a>
+					{/* <a href="#about">
+						<ChevDownStyle /> 
+					</a> */}
+					<ChevDownStyle />
 				</div>
-			</div>
+			</Container>
 		</React.Fragment>
 	);
 }

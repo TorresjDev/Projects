@@ -49,11 +49,12 @@ video {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
 }
 
 .home-content h2 {
@@ -65,7 +66,37 @@ video {
 }
 
 .home-content p {
-    font-size: 3em;
+    color: snow;
+    font-weight: bolder;
+    font-size: 2.1rem;
+    text-shadow: 1px 1px black;
+}
+
+
+/* 720px / 16px = 28.75em */
+
+@media (max-width: 45em) {
+    .home-content {
+        width: 30%;
+        left: 35%;
+    }
+}
+
+
+/* 460px / 16px = 28.75em */
+
+@media (max-width: 28.75em) {
+    /* .home-content h2 {
+        font-size: 2rem;
+    }
+    */
+    .home-content {
+        width: 25%;
+        left: 30%;
+    }
+    .home-content p {
+        font-size: 0.5rem;
+    }
 }
 
 

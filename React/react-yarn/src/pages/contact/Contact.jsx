@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { Linkedin, Github, Mailbox, Telephone } from "@styled-icons/bootstrap";
 import "./contact.css";
@@ -13,7 +13,7 @@ const Contact = () => {
 
 	return (
 		<React.Fragment>
-			<Container className="py-5">
+			<Container className="py-5 contact-container">
 				<Row className="pt-4">
 					<Col>
 						<h1 className="display-3">Let's work together...</h1>
@@ -21,30 +21,32 @@ const Contact = () => {
 					</Col>
 				</Row>
 				<Row>
-					<Link
+					<a
 						href="https://www.linkedin.com/in/torresdev/"
 						target="_blank"
+						rel="noreferrer"
 						class="btn contact-details"
 					>
 						<Linkedin style={iconStyle} /> torresdev
-					</Link>
-					<Link
+					</a>
+					<a
 						id="profile-link"
 						href="https://github.com/TorresjDev"
 						target="_blank"
+						rel="noreferrer"
 						class="btn contact-details"
 					>
 						<Github style={iconStyle} /> TorresjDev
-					</Link>
-					<Link
+					</a>
+					<a
 						href="mailto:j.torres3.dev@gmail.com"
 						class="btn contact-details"
 					>
 						<Mailbox style={iconStyle} /> Send email
-					</Link>
-					<Link href="tel:760-515-9294" class="btn contact-details">
+					</a>
+					<a href="tel:760-515-9294" class="btn contact-details">
 						<Telephone style={iconStyle} /> Call me
-					</Link>
+					</a>
 				</Row>
 			</Container>
 		</React.Fragment>

@@ -42,6 +42,19 @@ html {
     html {
         font-size: 58%;
     }
+    video {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+
+/* 720px / 16px = 28.75em */
+
+@media (max-width: 45em) {
+    html {
+        font-size: 55%;
+    }
 }
 
 
@@ -49,7 +62,7 @@ html {
 
 @media (max-width: 28.75em) {
     html {
-        font-size: 55%;
+        font-size: 50%;
     }
 }
 
