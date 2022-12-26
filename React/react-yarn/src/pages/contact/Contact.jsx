@@ -20,9 +20,9 @@ const Contact = () => {
 
 	return (
 		<React.Fragment>
-			<Container className="py-5 contact-container">
-				<Row className="pt-4">
-					<Col className="contact-heading pb-4">
+			<Container fluid className="py-5 contact-container">
+				<Row className="py-4">
+					<Col className="contact-heading ">
 						<h1 className="display-3">Let's work together...</h1>
 						<p className="lead">Let us connect</p>
 					</Col>
@@ -71,36 +71,36 @@ export default Contact;
 
 /*
 		<React.Fragment>
-			<section id="contact" class="contact-section">
-				<div class="contact-section-header">
+			<section id="contact" className="contact-section">
+				<div className="contact-section-header">
 					<h2>Let's work together...</h2>
 					<p>Let us connect</p>
 				</div>
 
-				<div class="contact-links">
+				<div className="contact-links">
 					<Link
 						href="https://www.linkedin.com/in/torresdev/"
 						target="_blank"
-						class="btn contact-details"
+						className="btn contact-details"
 					>
-						<i class="fab fa-linkedin"></i> torresdev
+						<i className="fab fa-linkedin"></i> torresdev
 					</Link>
 					<Link
 						id="profile-link"
 						href="https://github.com/TorresjDev"
 						target="_blank"
-						class="btn contact-details"
+						className="btn contact-details"
 					>
-						<i class="fab fa-github"></i> TorresjDev
+						<i className="fab fa-github"></i> TorresjDev
 					</Link>
 					<Link
 						href="mailto:j.torres3.dev@gmail.com"
-						class="btn contact-details"
+						className="btn contact-details"
 					>
-						<i class="fas fa-at"></i> Send email
+						<i className="fas fa-at"></i> Send email
 					</Link>
-					<Link href="tel:760-515-9294" class="btn contact-details">
-						<i class="fas fa-mobile-alt"></i> Call me
+					<Link href="tel:760-515-9294" className="btn contact-details">
+						<i className="fas fa-mobile-alt"></i> Call me
 					</Link>
 				</div>
 			</section>
