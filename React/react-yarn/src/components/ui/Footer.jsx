@@ -1,6 +1,5 @@
 import React from "react";
 // import { Row } from "react-bootstrap";
-
 function Footer() {
 	return (
 		<div className="footer-container">
