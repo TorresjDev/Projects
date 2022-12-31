@@ -14,7 +14,6 @@ const NotFound = () => {
 	return (
 		<Card className="text-center">
 			<Card.Header>Site Un-Available</Card.Header>
-
 			<Card.Img fluid variant="top" style={imgStyle} src={SiteLogo} />
 			<Card.Body>
 				<Card.Title>Sorry, Page not found</Card.Title>

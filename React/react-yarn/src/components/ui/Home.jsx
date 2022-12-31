@@ -1,6 +1,6 @@
 import React from "react";
 import videoBg from "../../vid/sunrise.mp4";
-import moonImg from "../../img/home/moon-img-iii.png";
+import moonImg from "../../img/home/moon-img.png";
 import styled from "styled-components";
 import { ChevronDownCircle } from "@styled-icons/ionicons-outline/ChevronDownCircle";
 import { Container } from "react-bootstrap";
