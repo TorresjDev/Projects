@@ -1,18 +1,19 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
-
-import { Linkedin, Github, Telephone, Mailbox } from "@styled-icons/bootstrap";
+// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+// import Tooltip from "react-bootstrap/Tooltip";
+import ContactLinks from "./Contact-Links";
+import ContactForm from "./Contact-Form";
+// import { Linkedin, Github, Telephone, Mailbox } from "@styled-icons/bootstrap";
 import "./contact.css";
 
 const Contact = () => {
-	const renderTooltip = (props) => (
-		<Tooltip {...props}>j.torres3.dev@gmail.com</Tooltip>
-	);
+	// const renderTooltip = (props) => (
+	// 	<Tooltip {...props}>j.torres3.dev@gmail.com</Tooltip>
+	// );
 
-	const iconStyle = { color: "maroon", width: "3rem" };
+	// const iconStyle = { color: "maroon", width: "3rem" };
 	// styled(Linkedin)`
 	// width: 2rem;
 
@@ -20,14 +21,21 @@ const Contact = () => {
 
 	return (
 		<React.Fragment>
-			<Container fluid className="py-5 contact-container">
-				<Row className="py-4">
+			<Container fluid className="p-3 contact-container ">
+				<Row className="p-3 ">
 					<Col className="contact-heading ">
 						<h1 className="display-3">Let's work together...</h1>
 						<p className="lead">Let us connect</p>
 					</Col>
+					<Col>
+						<ContactLinks />
+					</Col>
 				</Row>
-				<Row className="contact-links py-3">
+				<Row md="auto" className="justify-content-around"></Row>
+				<Col className="m-3">
+					<ContactForm />
+				</Col>
+				{/* <Row className="contact-links py-3">
 					<a
 						href="https://www.linkedin.com/in/torresdev/"
 						target="_blank"
@@ -61,7 +69,7 @@ const Contact = () => {
 					<a href="tel:760-515-9294" className="btn contact-details">
 						<Telephone style={iconStyle} /> Call me
 					</a>
-				</Row>
+				</Row> */}
 			</Container>
 		</React.Fragment>
 	);
