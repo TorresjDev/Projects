@@ -21,7 +21,7 @@ function App() {
 						<Route path="*" element={<NotFound />} />
 					</Routes>
 				</Container>
-				<Footer></Footer>
+				<Footer />
 			</Router>{" "}
 		</React.Fragment>
 	);
