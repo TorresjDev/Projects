@@ -2,9 +2,10 @@
 
 .contact-container {
     background-color: silver;
-    max-width: 100%;
-    height: 100vh;
+    /* max-width: 100%; */
+    /* height: 100vh; */
     width: 100vw;
+    padding-bottom: 3rem;
 }
 
 .contact-heading {
@@ -18,24 +19,40 @@
     padding-left: 15%;
 }
 
-.contact-links {
-    /* text-align: center; */
-    justify-content: space-around;
-}
 
-.contact-details {
-    font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
+/*! Contact END */
+
+
+/*? Contact-Links START*/
+
+.contact-links {
+    /* font-size: 2.4rem; */
+    text-shadow: 1.5px 2.2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
     flex-basis: fit-content;
     padding-left: 0.5rem;
 }
 
-.contact-details:hover {
-    color: black;
+.contact-links:hover {
+    /* color: black; */
     width: 4rem;
     transform: translateY(9px);
 }
 
 
-/*! Contact END */
+/*!Contact-Links END */
+
+
+/*? Contact-Form START*/
+
+Form h1 {
+    padding: 0.5em;
+    text-align-last: center;
+}
+
+.contact-submit {
+    display: inline;
+}
+
+
+/*!Contact-Form END */

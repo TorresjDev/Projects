@@ -1,53 +1,53 @@
 import React from "react";
-// import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 
 const ContactForm = () => {
 	return (
 		<React.Fragment>
-			<div className="container mb-3 pb-3 bg-light position-static">
-				<div className="row">
-					{/* <div className="col-md-6 p-5 bg-primary text-white">
+			{/* <div className=" mb-3 pb-3 bg-light position-static"> */}
+			{/* <div className="col-md-6 p-5 bg-primary text-white">
 						<h1>Hi There</h1>
-						<h4>Helllo this is h</h4>
+						<h4>Hello this is h</h4>
 					</div> */}
 
-					<div className="col py-3">
-						<h2>Contact Form</h2>
-						<div className="form-group my-2">
-							<h5 htmlFor="name">Name</h5>
-							<input
-								type="text"
-								className="form-control"
-								id="name"
-								placeholder="Enter your name"
-							/>
-						</div>
-						<div className="form-group my-2">
-							<h5 htmlFor="email">Email</h5>
-							<input
-								type="text"
-								className="form-control"
-								id="email"
-								placeholder="Enter your email"
-							/>
-						</div>
-						<div className="form-group my-2">
-							<h5 htmlFor="message">Message</h5>
-							<textarea
-								className="form-control "
-								id="message"
-								rows="3"
-							></textarea>
-						</div>
-						<button
-							className="btn btn-outline-primary"
-							// onClick={sendMail}
-						>
-							Submit
-						</button>
-					</div>
-				</div>
-			</div>
+			<Form className=" bg-light">
+				<h1>Contact Form</h1>
+				<Form.Group className="form-group m-2">
+					<Form.Label htmlFor="name">Name</Form.Label>
+					<Form.Control
+						type="text"
+						className="form-control"
+						id="name"
+						placeholder="Enter your name"
+					/>
+				</Form.Group>
+				<Form.Group className="form-group m-2">
+					<Form.Label htmlFor="email">Email</Form.Label>
+					<Form.Control
+						type="text"
+						className="form-control"
+						id="email"
+						placeholder="Enter your email"
+					/>
+				</Form.Group>
+				<Form.Group className="form-group m-2">
+					<Form.Label htmlFor="message">Message</Form.Label>
+					<Form.Control
+						as="textarea"
+						className="form-control "
+						id="message"
+						rows="3"
+					></Form.Control>
+				</Form.Group>
+				<Button
+					className="contact-submit"
+					// className="btn btn-outline-primary"
+					// onClick={sendMail}
+				>
+					Submit
+				</Button>
+			</Form>
+			{/* </div> */}
 		</React.Fragment>
 	);
 };
