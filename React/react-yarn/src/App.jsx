@@ -20,9 +20,9 @@ function App() {
 						<Route exact path="/contact" element={<Contact />} />
 						<Route path="*" element={<NotFound />} />
 					</Routes>
+					<Footer />
 				</Container>
-				<Footer />
-			</Router>{" "}
+			</Router>
 		</React.Fragment>
 	);
 }
