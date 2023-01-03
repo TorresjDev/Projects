@@ -17,9 +17,9 @@ const ContactLinks = () => {
 
 	return (
 		<React.Fragment>
-			<Stack direction="vertical" gap={3} className="pt-4 ">
+			<Stack direction="vertical" gap={4} className="pt-4 ">
 				<Row>
-					<Col className="gap-3">
+					<Col>
 						<Button
 							className="contact-links"
 							variant="outline-primary"
