@@ -15,8 +15,7 @@ function Home(props) {
 			width: 6rem;
 		}
 	`;
-	// console.log(props);
-	// const user = props.user;
+
 	return (
 		<React.Fragment>
 			<Container className="container home-main">
@@ -28,9 +27,6 @@ function Home(props) {
 					</a>
 					<h2>Jesus Torres</h2>
 					<p>Software Engineer</p>
-					{/* <a href="#about">
-						<ChevDownStyle /> 
-					</a> */}
 					<ChevDownStyle />
 				</div>
 			</Container>
