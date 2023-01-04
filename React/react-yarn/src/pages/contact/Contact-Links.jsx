@@ -13,6 +13,7 @@ const ContactLinks = () => {
 		setShow(!show);
 		setTarget(event.target);
 	};
+
 	const iconStyle = { width: "6rem" };
 
 	return (
@@ -56,7 +57,6 @@ const ContactLinks = () => {
 							>
 								<Mailbox /> email
 							</Button>
-
 							<Overlay
 								show={show}
 								target={target}

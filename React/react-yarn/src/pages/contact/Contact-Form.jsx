@@ -21,7 +21,6 @@ const ContactForm = () => {
 					console.log(result.text);
 					console.log("message sent");
 					/*
-						
 						url("../../img/email.gif")
 						width: 600,
 						padding: "3em",
@@ -51,7 +50,7 @@ const ContactForm = () => {
 		<React.Fragment>
 			<div className="container">
 				<Form className="bg-light pb-3" ref={form} onSubmit={sendEmail}>
-					<h1>Leave me a message 👇</h1>
+					<h1>Send me a message 👇</h1>
 					<Form.Group className="form-group m-2">
 						<Form.Label htmlFor="name">Name</Form.Label>
 						<Form.Control
@@ -83,6 +82,7 @@ const ContactForm = () => {
 						></Form.Control>
 					</Form.Group>
 					<Button
+						variant="outline-primary"
 						className="contact-submit my-3"
 						value="Send"
 						type="submit"
