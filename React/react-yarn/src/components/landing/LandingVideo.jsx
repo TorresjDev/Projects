@@ -16,7 +16,7 @@ function LandingVideo() {
 		}
 	`;
 
-	<React.Fragment>
+	return (
 		<Container className="container home-main">
 			<div className="home-overlay"></div>
 			<video src={videoBg} autoPlay loop muted />
@@ -29,7 +29,7 @@ function LandingVideo() {
 				<ChevDownStyle />
 			</div>
 		</Container>
-	</React.Fragment>;
+	);
 }
 
 export default LandingVideo;

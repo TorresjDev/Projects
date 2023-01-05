@@ -14,12 +14,13 @@ function App() {
 		<React.Fragment>
 			<Router>
 				<SiteNav></SiteNav>
-				<Container fluid className="app">
+				<Container className="app">
 					<Routes>
 						<Route exact path="/" element={<Home />} />
 						<Route exact path="/contact" element={<Contact />} />
 						<Route path="*" element={<NotFound />} />
 					</Routes>
+					{/* <Home /> */}
 					<Footer />
 				</Container>
 			</Router>
