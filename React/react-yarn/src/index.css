@@ -21,13 +21,6 @@
     box-sizing: inherit;
 } */
 
-html {
-    /* box-sizing: border-box; */
-    scroll-behavior: smooth;
-    background-color: rgb(35, 131, 131);
-    height: 100%;
-}
-
 
 /* 1200px / 16px = 75em */
 
@@ -71,17 +64,18 @@ html {
 
 /* Base styles */
 
-body {
+
+/* body {
     font-size: 1.5rem;
-    /* 18px */
     font-weight: 400;
     height: 100%;
     line-height: 1.2;
     color: var(--main-white);
     padding-bottom: 60px;
-}
+} */
 
-img {
+
+/* img {
     display: block;
     width: 100%;
-}
+} */
