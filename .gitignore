@@ -16,7 +16,7 @@ yarn.lock
 
 vscode
 
-.vscode
+.vscode/
 
 .vscode/settings.json
 
