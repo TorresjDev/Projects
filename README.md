@@ -64,10 +64,10 @@
 </div>
 
 - **_Responsive Mobile/Web Application Project_**
-  > - _Created reuseable components creating with React-App_
+  > - _Created reuseable components created with React-App_
     > - _React Profile template for portfolio website_
-  <!-- > - _Created view models for transfering data back & forth from the database to the controller._
-  > - _Created controllers to run the request and handle data properly between view models._ -->
+  > - _Created view models for transfering data back & forth from the database to the controller._
+  <!-- > - _Created controllers to run the request and handle data properly between view models._ -->
 
 ## **Tools:**
 
