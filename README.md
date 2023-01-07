@@ -66,7 +66,7 @@
 - **_Responsive Mobile/Web Application Project_**
   > - _Created reuseable components created with React-App_
     > - _React Profile template for portfolio website_
-  > - _Created view models for transfering data back & forth from the database to the controller._
+  > - _Currently using two seperate files for different package managers._
   <!-- > - _Created controllers to run the request and handle data properly between view models._ -->
 
 ## **Tools:**
