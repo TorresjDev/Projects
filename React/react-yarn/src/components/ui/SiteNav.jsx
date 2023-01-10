@@ -13,7 +13,7 @@ const SiteNav = () => {
 		padding-left: 0.5rem;
 		&:hover {
 			color: maroon;
-			width: 2.5rem;
+			width: 2.1rem;
 		}
 	`;
 
@@ -22,15 +22,21 @@ const SiteNav = () => {
 			<Container className="nav-list">
 				<Navbar.Brand href="/" className="nav-icon">
 					<HomeStyled />
-					&nbsp; Welcome
 				</Navbar.Brand>
+				<strong>&nbsp; Welcome</strong>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav variant="pills" bg="success" className="me-auto">
 						{/* <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link> */}
 						<NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-							<NavDropdown.Item href="/cards">Cards</NavDropdown.Item>
+							<NavDropdown.Item href="/artwork">
+								Artwork
+							</NavDropdown.Item>
+							<NavDropdown.Item href="/quotes">
+								Quote Generator
+							</NavDropdown.Item>
+
 							<NavDropdown.Divider />
 							<NavDropdown.Item href="/create-card">
 								New Card
