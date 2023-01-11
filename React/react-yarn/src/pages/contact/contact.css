@@ -25,15 +25,16 @@
 
 /*? Contact-Links START*/
 
-.contact-links {
+.ctn-link {
     /* font-size: 2.4rem; */
-    text-shadow: 1.5px 2.2px 1px #1f1f1f;
+    /* text-shadow: 1.2px 1.8px 1px #1f1f1f; */
     transition: transform 0.3s ease-out;
     flex-basis: fit-content;
     padding-left: 0.5rem;
+    font-weight: bolder;
 }
 
-.contact-links:hover {
+.ctn-link:hover {
     /* color: black; */
     width: 4rem;
     transform: translateY(9px);
@@ -45,7 +46,7 @@
 
 /*? Contact-Form START*/
 
-Form h1 {
+Form h2 {
     padding: 0.5em;
     text-align-last: center;
 }

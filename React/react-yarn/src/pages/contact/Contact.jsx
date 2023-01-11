@@ -2,9 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ContactLinks from "./Contact-Links";
 import ContactForm from "./Contact-Form";
-
 import "./contact.css";
-
 const Contact = () => {
 	return (
 		<React.Fragment>

@@ -20,9 +20,9 @@ const ContactLinks = () => {
 		<React.Fragment>
 			<Stack direction="vertical" gap={4} className="pt-4 ">
 				<Row>
-					<Col>
+					<Col className="m-2">
 						<Button
-							className="contact-links"
+							className="ctn-link"
 							variant="outline-primary"
 							style={iconStyle}
 							rel="noreferrer"
@@ -32,9 +32,9 @@ const ContactLinks = () => {
 							<Linkedin /> TorresjDev
 						</Button>
 					</Col>
-					<Col>
+					<Col className="m-2">
 						<Button
-							className="contact-links"
+							className="ctn-link"
 							variant="outline-dark"
 							style={iconStyle}
 							rel="noreferrer"
@@ -46,10 +46,10 @@ const ContactLinks = () => {
 					</Col>
 				</Row>
 				<Row>
-					<Col>
+					<Col className="m-2">
 						<div ref={ref}>
 							<Button
-								className="contact-links"
+								className="ctn-link"
 								variant="outline-success"
 								style={iconStyle}
 								onClick={handleClick}
@@ -75,10 +75,10 @@ const ContactLinks = () => {
 							</Overlay>
 						</div>
 					</Col>
-					<Col>
+					<Col className="m-2">
 						<div>
 							<Button
-								className="contact-links"
+								className="ctn-link"
 								variant="outline-secondary"
 								style={iconStyle}
 								rel="noreferrer"

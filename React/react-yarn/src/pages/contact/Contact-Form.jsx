@@ -20,17 +20,9 @@ const ContactForm = () => {
 				(result) => {
 					console.log(result.text);
 					console.log("message sent");
-					/*
-						url("../../img/email.gif")
-						width: 600,
-						padding: "3em",
-						background:
-						"#fff url(https://sweetalert2.github.io/images/trees.png)",
-					*/
 					Swal.fire({
 						title: "Message was sent successfully.",
 						color: "#6d0000",
-
 						backdrop: `
 							rgba(29,0,57,0.6)
 							url("https://sweetalert2.github.io/images/nyan-cat.gif")
@@ -49,8 +41,8 @@ const ContactForm = () => {
 	return (
 		<React.Fragment>
 			<div className="container">
-				<Form className="bg-light pb-3" ref={form} onSubmit={sendEmail}>
-					<h1>Send me a message 👇</h1>
+				<Form className="bg-light p-3" ref={form} onSubmit={sendEmail}>
+					<h2>Send me a message 👇</h2>
 					<Form.Group className="form-group m-2">
 						<Form.Label htmlFor="name">Name</Form.Label>
 						<Form.Control
