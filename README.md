@@ -47,7 +47,7 @@
 
 - **_Responsive Web Applications:_**
   > - _Created serveral web application using HTML5 and CSS._
-  > - _Connect the bridge from client to serve using ASP.NET MVC._
+ 
 
 ## **React:**
 
