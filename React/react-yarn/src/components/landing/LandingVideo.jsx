@@ -1,9 +1,10 @@
 import React from "react";
+// import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import videoBg from "../../vid/sunrise.mp4";
 import moonImg from "../../img/home/moon-img.png";
 import styled from "styled-components";
 import { ChevronDownCircle } from "@styled-icons/ionicons-outline/ChevronDownCircle";
-import { Container } from "react-bootstrap";
 
 function LandingVideo() {
 	const ChevDownStyle = styled(ChevronDownCircle)`
@@ -26,7 +27,9 @@ function LandingVideo() {
 				</a>
 				<h2>Jesus Torres</h2>
 				<p>Software Engineer</p>
-				<ChevDownStyle />
+				<a href="#projects-carousel">
+					<ChevDownStyle />
+				</a>
 			</div>
 		</Container>
 	);

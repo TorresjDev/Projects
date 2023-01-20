@@ -8,7 +8,7 @@ function Home(props) {
 		<React.Fragment>
 			<LandingVideo />
 			<LandingPage />
-			<div>
+			<div id="projects-carousel">
 				<ProjectsCarousel />
 			</div>
 		</React.Fragment>
