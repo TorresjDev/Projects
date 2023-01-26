@@ -1,4 +1,4 @@
-# **A Journey Through Coding: A Selection of Projects for Learning & Growth**
+# **A Journey Through Coding: A Selection for Learning & Growth**
 
 > #### **_Diving into Different Languages: My Showcase of Learning and Challenging Projects._**
 
