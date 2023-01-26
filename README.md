@@ -1,8 +1,8 @@
 # **Projects**
 
-> #### **_Projects created for learning, understanding, and new challenges._**
+> #### **_A Journey Through Coding Languages: A Selection of Projects for Learning and Growth._**
 >
-> #### **_Majority of projects contained in this repository will be classified by their respective marjoty language category being learned._**
+> #### **_Diving into Different Languages: A Showcase of Learning and Challenging Projects._**
 
 ---
 
