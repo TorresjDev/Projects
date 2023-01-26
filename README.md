@@ -27,6 +27,10 @@
   <a href="https://angular.io/" target="_blank">
     <img src="https://profilinator.rishav.dev/skills-assets/angularjs-original.svg" alt="Angular" height="35" />
   </a>  
+  <a href="https://www.mongodb.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="50" />
+  </a>  
+<a href="https://expressjs.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="50" />
+  </a>  
   <a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" />
   </a>  
 </div>
