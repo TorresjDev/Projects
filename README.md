@@ -1,8 +1,6 @@
-# **Projects**
+# **A Journey Through Coding Languages: A Selection of Projects for Learning and Growth**
 
-> #### **_A Journey Through Coding Languages: A Selection of Projects for Learning and Growth._**
->
-> #### **_Diving into Different Languages: A Showcase of Learning and Challenging Projects._**
+> #### **_Diving into Different Languages: My Showcase of Learning and Challenging Projects._**
 
 ---
 
