@@ -62,7 +62,13 @@
 </div>
 
 - **_Responsive Web Applications:_**
-  > - _Created serveral web application using HTML5 and CSS._
+
+  > - _Leveraged HTML5 features to create semantic and accessible web applications._
+  > - _Developed several web applications that adapt to different screen sizes and resolutions
+Implemented cross-browser compatible and responsive layouts._
+  > - _Incorporated jQuery to enhance the functionality and interactivity of the web applications._
+  > - _Utilized Bootstrap and Tailwind CSS to create well-structured, visually appealing, and consistent designs._
+  > - _Applied advanced CSS techniques and Utilized the power of utility-first CSS with Tailwind._
  
 
 ## **React:**
