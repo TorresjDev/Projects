@@ -36,9 +36,13 @@
 </div>
 
 - **_Full Stack Project_**
-  > - _Created multiple components for rendering data._
-  > - _Created reusable forms for creating content._
-  > - _Connect data to MongoDB using AWS._
+
+  > - _Implemented reusable forms for repetitive creation and editing of content._
+  > - _Designed and developed multiple components for efficient data rendering._
+  > - _Implemented efficient data flow and state management using advanced features of Angular._
+  > - _Utilized MongoDB and Express to create a flexible and powerful back-end._
+  > - _Utilized Node.js to connect the front-end and back-end and ensure seamless communication._
+  > - _Proficient in a variety of technologies including HTML, CSS, JavaScript, TypeScript, Angular, MongoDB, Express, and Node.js_
 
 ## **Frontend:**
 
