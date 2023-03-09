@@ -90,10 +90,9 @@ Implemented cross-browser compatible and responsive layouts._
   > - _Designed and implemented a React profile template for a portfolio website, demonstrating proficiency in React and UI design._
   > - _Utilized React's component-based architecture to create reusable code blocks, increasing code maintainability and reducing development time._
   > - _Implemented responsive design principles to ensure optimal user experience across different devices._
-  > - _Created reuseable components created with React-App_
+  > - _Employed best practices for React project organization and management, including utilizing separate files for different package managers._
   > - _Optimized the application's performance by using React's virtual DOM and minimizing unnecessary re-rendering of components._
-  > - _Created reuseable components created with React-App_
-  > - _Created reuseable components created with React-App_
+  > - _Led the development of a responsive mobile/web application project, utilizing React-App and creating reusable components to optimize efficiency._
 
   
   <!-- > - _Created controllers to run the request and handle data properly between view models._ -->
