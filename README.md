@@ -1,6 +1,6 @@
-# **A Journey Through Coding: A Selection for Learning & Growth**
+# **Portfolio of Learning and Growth: A Showcase of Diverse Projects**
 
-> #### **_Diving into Different Languages: My Showcase of Learning and Challenging Projects._**
+> #### **_Explore a collection of personal coding projects that demonstrate proficiency in various programming languages and frameworks. From responsive web applications to data analysis and visualization, this portfolio showcases a journey of continuous learning and growth._**
 
 ---
 
