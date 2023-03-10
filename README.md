@@ -61,10 +61,9 @@
 
 - **_Responsive Web Applications:_**
 
-  > - _Leveraged HTML5 features to create semantic and accessible web applications._
-  > - _Developed several web applications that adapt to different screen sizes and resolutions
-Implemented cross-browser compatible and responsive layouts._
-  > - _Incorporated jQuery to enhance the functionality and interactivity of the web applications._
+  > - _Developed several responsive web applications that adjust seamlessly to various screen sizes and resolutions, ensuring optimal user experiences._
+  > - _Utilized HTML5 to create semantic and accessible web applications that comply with industry standards._
+  > - _ Incorporated jQuery to enhance the interactivity and functionality of web applications, improving user engagement._
   > - _Utilized Bootstrap and Tailwind CSS to create well-structured, visually appealing, and consistent designs._
   > - _Applied advanced CSS techniques and Utilized the power of utility-first CSS with Tailwind._
  
