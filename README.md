@@ -63,9 +63,9 @@
 
   > - _Developed several responsive web applications that adjust seamlessly to various screen sizes and resolutions, ensuring optimal user experiences._
   > - _Utilized HTML5 to create semantic and accessible web applications that comply with industry standards._
-  > - _ Incorporated jQuery to enhance the interactivity and functionality of web applications, improving user engagement._
-  > - _Utilized Bootstrap and Tailwind CSS to create well-structured, visually appealing, and consistent designs._
-  > - _Applied advanced CSS techniques and Utilized the power of utility-first CSS with Tailwind._
+  > - _Incorporated jQuery to enhance the interactivity and functionality of web applications, improving user engagement._
+  > - _Employed Bootstrap and Tailwind CSS frameworks to produce well-structured, visually appealing, and consistent designs for web applications._
+  > - _Applied advanced CSS techniques to create custom designs, taking advantage of utility-first CSS with Tailwind to streamline the development process._
  
 
 ## **React:**
