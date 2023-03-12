@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import SiteNav from "./components/ui/SiteNav";
 import Footer from "./components/ui/Footer";
 import Container from "react-bootstrap/Container";
+import Forms from "./components/forms/Forms";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					<Routes>
 						<Route exact path="/" element={<Home />} />
 						<Route exact path="/contact" element={<Contact />} />
+						<Route exact path="/form" element={<Forms />} />
 						<Route path="*" element={<NotFound />} />
 					</Routes>
 					<Footer />
