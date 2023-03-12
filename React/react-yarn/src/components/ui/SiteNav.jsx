@@ -36,7 +36,8 @@ const SiteNav = () => {
 							<NavDropdown.Item href="/quotes">
 								Quote Generator
 							</NavDropdown.Item>
-
+							<NavDropdown.Divider />
+							<NavDropdown.Item href="/form">Forms</NavDropdown.Item>
 							<NavDropdown.Divider />
 							<NavDropdown.Item href="/create-card">
 								New Card
