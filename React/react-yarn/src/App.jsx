@@ -9,7 +9,7 @@ import NotFound from "./components/NotFound";
 import SiteNav from "./components/ui/SiteNav";
 import Footer from "./components/ui/Footer";
 import Container from "react-bootstrap/Container";
-import SkillsInput from "./components/forms/SkillsInput";
+import Form from "./components/forms/Form";
 
 function App() {
 	return (
@@ -20,7 +20,7 @@ function App() {
 					<Routes>
 						<Route exact path="/" element={<Home />} />
 						<Route exact path="/contact" element={<Contact />} />
-						<Route exact path="/skills" element={<SkillsInput />} />
+						<Route exact path="/form" element={<Form />} />
 						<Route path="*" element={<NotFound />} />
 					</Routes>
 					<Footer />

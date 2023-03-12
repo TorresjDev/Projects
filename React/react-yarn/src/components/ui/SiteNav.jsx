@@ -37,9 +37,7 @@ const SiteNav = () => {
 								Quote Generator
 							</NavDropdown.Item>
 							<NavDropdown.Divider />
-							<NavDropdown.Item href="/skills">
-								add skills
-							</NavDropdown.Item>
+							<NavDropdown.Item href="/form">Form</NavDropdown.Item>
 							<NavDropdown.Divider />
 							<NavDropdown.Item href="/create-card">
 								New Card
