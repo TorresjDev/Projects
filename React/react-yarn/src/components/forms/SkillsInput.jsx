@@ -22,7 +22,6 @@ function SkillsInput() {
 				skills: [...prevState.skills, ...newSkills],
 			}));
 		}
-
 		// Clear the input field after submitting
 		skillInput.value = "";
 	};
