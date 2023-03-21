@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Navbar, NavDropdown, Nav } from "react-bootstrap";
-import styled from "styled-components";
-import { Home } from "@styled-icons/boxicons-regular/Home";
+import React from 'react';
+import { Container, Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import styled from 'styled-components';
+import { Home } from '@styled-icons/boxicons-regular/Home';
 const SiteNav = () => {
 	// const goToPage = (e) => {
 	// 	console.log(e.currentTarget.dataset.page);
@@ -35,6 +35,9 @@ const SiteNav = () => {
 							</NavDropdown.Item>
 							<NavDropdown.Item href="/quotes">
 								Quote Generator
+							</NavDropdown.Item>
+							<NavDropdown.Item href="/history">
+								Historic Events
 							</NavDropdown.Item>
 							<NavDropdown.Divider />
 							<NavDropdown.Item href="/form">Form</NavDropdown.Item>
