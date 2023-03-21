@@ -3,7 +3,7 @@ import HistoryDisplay from './HistoryDisplay';
 import HistoryList from './HistoryList';
 import HistoryPlaceholder from './HistoryPlaceholder';
 
-function history() {
+function HistoryPage() {
 	const [history, setHistory] = useState({});
 	const [showHistory, setHistoryShow] = useState(false);
 	const [showPlaceholder, setShowPlaceholder] = useState(true);
@@ -34,4 +34,4 @@ function history() {
 	);
 }
 
-export default history;
+export default HistoryPage;
