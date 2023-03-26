@@ -3,23 +3,23 @@
  */
 
 function sendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-    };
+	const serviceID = 'service_47254dr'; //contact_service
+	const templateID = 'template_3adzo5r'; //contact_form
 
-    const serviceID = "service_47254dr";
-    const templateID = "template_3adzo5r";
+	var params = {
+		name: $('#name').val(),
+		email: $('#email').val(),
+		message: $('#message').val(),
+	};
 
-    emailjs
-        .send(serviceID, templateID, params)
-        .then((res) => {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("Your message sent successfully");
-        })
-        .catch((err) => console.log(err));
+	emailjs
+		.send(serviceID, templateID, params)
+		.then((res) => {
+			$('#name').val('');
+			$('#email').val('');
+			$('#message').val('');
+			console.log('msg sent successfully', { res, params });
+			alert('Your message sent successfully');
+		})
+		.catch((err) => console.log(err));
 }
