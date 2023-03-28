@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 // import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
-import videoBg from "../../vid/sunrise.mp4";
-import moonImg from "../../img/home/moon-img.png";
-import styled from "styled-components";
-import { ChevronDownCircle } from "@styled-icons/ionicons-outline/ChevronDownCircle";
+import { Container } from 'react-bootstrap';
+import videoBg from '../../vid/sunrise.mp4';
+import moonImg from '../../img/home/moon-img.png';
+import styled from 'styled-components';
+import { ChevronDownCircle } from '@styled-icons/ionicons-outline/ChevronDownCircle';
 
 function LandingVideo() {
 	const ChevDownStyle = styled(ChevronDownCircle)`
-		color: black;
-		width: 5rem;
+		color: silver;
+		width: 6rem;
 		opacity: 70%;
 		&:hover {
 			color: maroon;
@@ -18,16 +18,16 @@ function LandingVideo() {
 	`;
 
 	return (
-		<Container className="container home-main">
-			<div className="home-overlay"></div>
+		<Container className='container home-main'>
+			<div className='home-overlay'></div>
 			<video src={videoBg} autoPlay loop muted />
-			<div className="home-content">
-				<a href="/parallax-website/index.html">
-					<img src={moonImg} alt="logo" />
+			<div className='home-content'>
+				<a href='/parallax-website/index.html'>
+					<img src={moonImg} alt='logo' />
 				</a>
 				<h2>Jesus Torres</h2>
 				<p>Software Engineer</p>
-				<a href="#projects-carousel">
+				<a href='#projects-carousel'>
 					<ChevDownStyle />
 				</a>
 			</div>
