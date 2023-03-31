@@ -12,6 +12,8 @@ import Container from 'react-bootstrap/Container';
 import HistoryPage from './components/history/HistoryPage';
 import Form from './components/forms/Form';
 import ArtWork from './pages/artwork/Artwork';
+import Login from './components/ui/Login';
+import Register from './components/ui/Register';
 
 function App() {
 	return (
@@ -21,6 +23,8 @@ function App() {
 				<Container className='app'>
 					<Routes>
 						<Route exact path='/' element={<Home />} />
+						<Route exact path='/login' element={<Login />} />
+						<Route exact path='/register' element={<Register />} />
 						<Route exact path='/contact' element={<Contact />} />
 						<Route exact path='/artwork' element={<ArtWork />} />
 						<Route exact path='/history' element={<HistoryPage />} />
