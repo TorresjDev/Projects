@@ -1,66 +1,73 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useMemo } from 'react';
 
 function SkillsInput() {
-	const [state, setState] = useState({
-		skills: [],
-	});
+	const [skills, setSkills] = useState([]);
+	const [query, setQuery] = useState('');
+
+	const inputRef = useRef();
+
+	const filteredSkills = useMemo(() => {
+		return skills.filter((item) => {
+			return item.toLowerCase().includes(query.toLowerCase());
+		});
+	}, [skills, query]);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		const skillInput = e.target.elements.skills;
-		let newSkills = [];
-		console.log("handleSubmit", { newSkills, skillInput, e });
+		const value = inputRef.current.value;
 
-		if (skillInput.name === "skills") {
-			newSkills = skillInput.value.split(",").map((skill) => skill.trim());
-		}
-		console.log("handleSubmit", { newSkills, skillInput });
-
-		if (newSkills.length) {
-			setState((prevState) => ({
-				...prevState,
-				skills: [...prevState.skills, ...newSkills],
-			}));
-		}
-		// Clear the input field after submitting
-		skillInput.value = "";
+		if (value === '') return;
+		setSkills((prev) => {
+			return [...prev, value];
+		});
+		inputRef.current.value = '';
 	};
 
 	return (
-		<div className="container">
-			<div className="row">
-				<div className="col-md-8">
-					<div className="card">
-						<div className="card-header">Hello</div>
-						<div className="card-body">
-							<form onSubmit={handleSubmit}>
-								<div className="mb-3 col-md-6 mx-auto">
-									<label htmlFor="skills" className="form-label">
-										Skills (use commas to separate skills)
-										<input
-											type="text"
-											className="form-control"
-											placeholder="Enter skills required for job"
-											id="skills"
-											name="skills"
-											required
-										></input>
-									</label>
-									<button type="submit" className="btn btn-success">
-										+ skill
-									</button>
-									<ul>
-										{state.skills.map((skill, index) => (
-											<li key={index}>{skill}</li>
-										))}
-									</ul>
+		<>
+			{' '}
+			<div className='container'>
+				<div className='row'>
+					<div className='col-md-8'>
+						<div className='card'>
+							<div className='card-header'>Skills</div>
+							<div className='card-body'>
+								<div className='row'>
+									Search:
+									<input value={query} onChange={(e) => setQuery(e.target.value)} type='search' />
 								</div>
-							</form>
+								<form onSubmit={handleSubmit}>
+									<div className='mb-3 col-md-6 mx-auto'>
+										<label htmlFor='skills' className='form-label'>
+											Skills (use commas to separate skills)
+											<input
+												type='text'
+												ref={inputRef}
+												className='form-control'
+												placeholder='Enter skills required for job'
+												id='skills'
+												name='skills'
+												required
+											></input>
+										</label>
+										<button type='submit' className='btn btn-success'>
+											+ skill
+										</button>
+										<div className='row'>
+											{filteredSkills.map((skill, index) => (
+												<div className='col-md-2' key={index}>
+													{skill}
+												</div>
+											))}
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
 
