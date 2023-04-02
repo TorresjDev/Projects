@@ -14,6 +14,7 @@ import Form from './components/forms/Form';
 import ArtWork from './pages/artwork/Artwork';
 import Login from './components/ui/Login';
 import Register from './components/ui/Register';
+import MapForm from './components/forms/MapForm';
 
 function App() {
 	return (
@@ -21,16 +22,20 @@ function App() {
 			<Router>
 				<SiteNav></SiteNav>
 				<Container className='app'>
-					<Routes>
-						<Route exact path='/' element={<Home />} />
-						<Route exact path='/login' element={<Login />} />
-						<Route exact path='/register' element={<Register />} />
-						<Route exact path='/contact' element={<Contact />} />
-						<Route exact path='/artwork' element={<ArtWork />} />
-						<Route exact path='/history' element={<HistoryPage />} />
-						<Route exact path='/form' element={<Form />} />
-						<Route path='*' element={<NotFound />} />
-					</Routes>
+					<div className='main'>
+						<Routes>
+							<Route exact path='/' element={<Home />} />
+							<Route exact path='/login' element={<Login />} />
+							<Route exact path='/register' element={<Register />} />
+							<Route exact path='/contact' element={<Contact />} />
+							<Route exact path='/artwork' element={<ArtWork />} />
+							<Route exact path='/history' element={<HistoryPage />} />
+							<Route exact path='/form' element={<Form />} />
+							<Route exact path='/form/maps' element={<MapForm />} />
+							<Route path='*' element={<NotFound />} />
+						</Routes>
+					</div>
+
 					<Footer />
 				</Container>
 			</Router>

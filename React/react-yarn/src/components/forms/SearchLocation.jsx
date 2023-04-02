@@ -1,22 +1,24 @@
 import React from 'react';
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-const gApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-
 const containerStyle = {
-	width: '400px',
-	height: '400px',
+	width: '100%',
+	height: '24em',
+	borderStyle: 'groove',
+	borderColor: 'maroon',
+	borderWidth: '.3em',
+	borderRadius: '9px',
 };
 
 const center = {
-	lat: -3.745,
-	lng: -38.523,
+	lat: 19.6928,
+	lng: -98.8431,
 };
 
-function MyComponent() {
+function MyComponent(props) {
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
-		googleMapsApiKey: gApiKey,
+		googleMapsApiKey: props.gMapKey,
 	});
 
 	const [map, setMap] = React.useState(null);
@@ -36,12 +38,16 @@ function MyComponent() {
 	}, []);
 
 	return isLoaded ? (
-		<GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10} onLoad={onLoad} onUnmount={onUnmount}>
+		<GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12.99} onLoad={onLoad} onUnmount={onUnmount}>
 			{/* Child components, such as markers, info windows, etc. */}
 			<></>
 		</GoogleMap>
 	) : (
-		<></>
+		<>
+			<div className='col'>
+				<p>Could not find the specified location</p>
+			</div>
+		</>
 	);
 }
 

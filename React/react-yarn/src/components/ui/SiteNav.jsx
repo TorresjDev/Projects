@@ -35,6 +35,8 @@ const SiteNav = () => {
 							<NavDropdown.Item href='/history'>Historic Events</NavDropdown.Item>
 							<NavDropdown.Divider />
 							<NavDropdown.Item href='/form'>Form</NavDropdown.Item>
+							<NavDropdown.Item href='/form/maps'>Map</NavDropdown.Item>
+
 							<NavDropdown.Divider />
 							<NavDropdown.Item href='/create-card'>New Card</NavDropdown.Item>
 						</NavDropdown>
