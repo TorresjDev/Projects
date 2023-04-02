@@ -18,9 +18,6 @@ vscode
 
 .vscode
 
-env
-.env 
-
 .vscode/settings.json
 
 # testing

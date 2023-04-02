@@ -3,17 +3,13 @@ import { Form, Button } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 
-const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const emailJSKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
 const ContactForm = () => {
 	const form = useRef();
-	console.log({ serviceId, templateId, emailJSKey });
+
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm(serviceId, templateId, form.current, emailJSKey).then(
+		emailjs.sendForm('service_47254dr', 'template_3adzo5r', form.current, 'D9773jLQenPeHc0S3').then(
 			(result) => {
 				console.log(result.text);
 				console.log('message sent');
