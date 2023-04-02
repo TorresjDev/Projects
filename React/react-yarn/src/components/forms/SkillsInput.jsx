@@ -28,7 +28,7 @@ function SkillsInput() {
 			{' '}
 			<div className='container'>
 				<div className='row'>
-					<div className='col-md-8'>
+					<div className='col-md-12'>
 						<div className='card'>
 							<div className='card-header'>Skills</div>
 							<div className='card-body'>
