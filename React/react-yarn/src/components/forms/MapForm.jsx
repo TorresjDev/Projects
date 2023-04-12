@@ -3,7 +3,7 @@ import SearchLocation from './SearchLocation';
 
 const gApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
-function MapForm() {
+function SearchForm() {
 	return (
 		<>
 			<div className='container-fluid bg-dark'>
@@ -25,4 +25,4 @@ function MapForm() {
 	);
 }
 
-export default MapForm;
+export default SearchForm;
