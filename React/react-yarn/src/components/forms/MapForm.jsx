@@ -4,7 +4,7 @@ import GMap from '../google/GMap';
 
 //const gApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
-function SearchForm() {
+function MapForm() {
 	return (
 		<>
 			<div className='container-fluid bg-dark'>
@@ -26,4 +26,4 @@ function SearchForm() {
 	);
 }
 
-export default SearchForm;
+export default MapForm;
