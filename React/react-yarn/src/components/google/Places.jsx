@@ -6,7 +6,7 @@ import '@reach/combobox/styles.css';
 
 export default function Places() {
 	const { isLoaded } = useLoadScript({
-		googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+		googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
 		libraries: ['places'],
 	});
 
