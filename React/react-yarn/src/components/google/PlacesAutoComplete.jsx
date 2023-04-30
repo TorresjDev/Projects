@@ -1,43 +1,65 @@
-import React from 'react';
-import usePlacesAutocomplete, { getGeocode, getLatLng } from 'use-places-autocomplete';
-import { Combobox, ComboboxInput, ComboboxPopover, ComboboxList, ComboboxOption } from '@reach/combobox';
-import '@reach/combobox/styles.css';
+import React, { useState } from 'react';
+import { Autocomplete, LoadScript } from '@react-google-maps/api';
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
-function PlacesAutoComplete({ setSelected }) {
-	const {
-		ready,
-		value,
-		setValue,
-		suggestions: { status, data },
-		clearSuggestions,
-	} = usePlacesAutocomplete();
+function PlaceAutoComplete() {
+	const [autocomplete, setAutoComplete] = useState(null);
+	const [address, setAddress] = useState('');
 
-	const handleSelect = async (address) => {
-		setValue(address, false);
-		clearSuggestions();
+	const handleOnLoad = (autoComplete) => {
+		console.log('autoComplete=> ', autoComplete);
+		setAutoComplete(autoComplete);
+	};
 
-		const results = await getGeocode({ address });
-		const { lat, lng } = await getLatLng(results[0]);
-		setSelected({ lat, lng });
+	const handlePlaceChanged = () => {
+		if (autocomplete !== null) {
+			const place = autocomplete.getPlace();
+			setAddress(place.formatted_address);
+			console.log({ place });
+		} else {
+			console.log('Autocomplete is not loaded yet!');
+		}
+	};
+
+	const handleAddressChange = (e) => {
+		setAddress(e.target.value);
+		console.log(e.target.value, address);
 	};
 
 	return (
-		<Combobox onSelect={handleSelect}>
-			<ComboboxInput
-				value={value}
-				onChange={(e) => setValue(e.target.value)}
-				disabled={!ready}
-				className='combobox-input'
-				placeholder='Search an address'
-			/>
-			<ComboboxPopover>
-				<ComboboxList>
-					{status === 'OK' &&
-						data.map(({ place_id, description }) => <ComboboxOption key={place_id} value={description} />)}
-				</ComboboxList>
-			</ComboboxPopover>
-		</Combobox>
+		<div className='mb-3'>
+			<label htmlFor='address'>Address</label>
+			<LoadScript googleMapsApiKey={apiKey} libraries={['places']}>
+				<Autocomplete
+					onLoad={handleOnLoad}
+					onPlaceChanged={handlePlaceChanged}
+					options={{
+						fields: ['formatted_address', 'geometry'],
+						types: ['geocode'],
+						componentRestrictions: { country: 'us' },
+					}}
+					style={{ width: '100%' }}
+				>
+					<input
+						type='text'
+						name='address'
+						autoComplete='address'
+						value={address}
+						placeholder='Enter Address'
+						onChange={handleAddressChange}
+						style={{ width: '100%', padding: '0.5rem' }}
+					/>
+				</Autocomplete>
+				{address && (
+					<ul>
+						{autocomplete?.getPlace()?.predictions?.map((prediction) => (
+							<li key={prediction.place_id}>{prediction.description}</li>
+						))}
+					</ul>
+				)}
+			</LoadScript>
+		</div>
 	);
 }
 
-export default PlacesAutoComplete;
+export default PlaceAutoComplete;
