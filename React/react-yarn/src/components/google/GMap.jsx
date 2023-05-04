@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import './google.css';
-import { GoogleMap, useLoadScript, Marker, Autocomplete } from '@react-google-maps/api';
-import PlacesAutocomplete from './PlacesAutoComplete';
+import { useLoadScript, Autocomplete, GoogleMap, Marker } from '@react-google-maps/api';
+// import PlacesAutocomplete from './PlacesAutoComplete';
 
 export default function GMap() {
 	const { isLoaded } = useLoadScript({
@@ -38,7 +38,7 @@ function Map() {
 
 	const handleAddressChange = (e) => {
 		setAddress(e.target.value);
-		console.log(e.target.value, address);
+		console.log(e, address);
 	};
 	return (
 		<>
@@ -69,11 +69,11 @@ function Map() {
 							<li key={prediction.place_id}>{prediction.description}</li>
 						))}
 					</ul>
-				)}{' '}
+				)}
 			</div>
 
 			<GoogleMap zoom={10} center={center} mapContainerClassName='map-container'>
-				{selected && <Marker position={selected} />}
+				{selected && <Marker position={center} />}
 			</GoogleMap>
 		</>
 	);
