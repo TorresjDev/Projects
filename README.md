@@ -25,11 +25,11 @@
   <a href="https://angular.io/" target="_blank">
     <img src="https://profilinator.rishav.dev/skills-assets/angularjs-original.svg" alt="Angular" height="35" />
   </a>  
-  <a href="https://www.mongodb.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="35" />
+  <a href="https://www.mongodb.com/" target="_blank"><img style="font-weight: bold; background-color: silver; padding-left: 2px; padding-right: 2px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="35" />
   </a>  
-<a href="https://expressjs.com/" target="_blank"><img style="margin: 10px, background-color: #fffafa" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="45" />
+<a href="https://expressjs.com/" target="_blank"><img style="font-weight: bolder; background-color: silver; padding-left: 2px; padding-right: 2px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="35" />
   </a>  
-  <a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="45" />
+  <a href="https://nodejs.org/" target="_blank"><img style="background-color: grey; padding-left: 2px; padding-right: 2px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="35" />
   </a>  
 </div>
 
@@ -51,11 +51,11 @@
   <a href="https://www.javascript.com/" target="_blank">
     <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="35" />
   </a>
-  <a href="https://jquery.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="35" />
+  <a href="https://jquery.com/" target="_blank"><img src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="35" />
   </a>  
-  <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="35" />
+  <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="35" />
   </a>  
-<a href="https://www.tailwindcss.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="Tailwind CSS" height="35" />
+<a href="https://www.tailwindcss.com/" target="_blank"><img src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="Tailwind CSS" height="35" />
   </a>  
 </div>
 
@@ -66,7 +66,6 @@
   > - _Incorporated jQuery to enhance the interactivity and functionality of web applications, improving user engagement._
   > - _Employed Bootstrap and Tailwind CSS frameworks to produce well-structured, visually appealing, and consistent designs for web applications._
   > - _Applied advanced CSS techniques to create custom designs, taking advantage of utility-first CSS with Tailwind to streamline the development process._
- 
 
 ## **React:**
 
@@ -77,7 +76,7 @@
   <a href="https://www.javascript.com/" target="_blank">
     <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="35" />
   </a>
-   <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="35" />
+   <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="35" />
   </a> 
   <a href="https://reactjs.org/" target="_blank">
     <img src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="35" /> 
@@ -86,6 +85,7 @@
 </div>
 
 - **_Responsive Mobile/Web Application Project_**
+
   > - _Designed and implemented a React profile template for a portfolio website, demonstrating proficiency in React and UI design._
   > - _Utilized React's component-based architecture to create reusable code blocks, increasing code maintainability and reducing development time._
   > - _Implemented responsive design principles to ensure optimal user experience across different devices._
@@ -93,7 +93,6 @@
   > - _Optimized the application's performance by using React's virtual DOM and minimizing unnecessary re-rendering of components._
   > - _Led the development of a responsive mobile/web application project, utilizing React-App and creating reusable components to optimize efficiency._
 
-  
   <!-- > - _Created controllers to run the request and handle data properly between view models._ -->
 
 ## **Tools:**
