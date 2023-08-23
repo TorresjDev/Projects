@@ -78,13 +78,35 @@ else: # second decision using else statement
 print('All done')
 
 #* Chapter 3 Conditional Structures
-#  Multi-way
+#  Multi-way meaning having conditions based on specific value
 x = 20
-if x < 2:
-    print('x is smaller')
-elif x < 10:
-    print('x is bigger')
-else:
+if x < 2: # if x is smaller run next line / if not true try next condition 
+    print('x is: ', x) # python stops here
+elif x < 10: # only runs if  x is not < 2 & if x < 10 / if not true try next condition
+    print('x is: ', x) # python stops here
+elif x < 20: 
+    print('x is: ', x) 
+elif x < 40:
+    print('x is: ', x)
+else: # only runs if all conditions are not true 
     print('Large')
 print('All done')
 
+#? Try / Except methods 
+# try is used to run code that might crash, except is used to handle any errors that might occur while attempting to run code within the try
+#* if code in the try block works then code in except is skipped
+#* if code in the try block fails then code jumps to the except block
+astr = "Hello World"
+try: # when 1st conversion fails for try
+    istr = int(astr)
+except: # program continues into the except and carries on without breaking
+    istr = -1
+print('1st try/catch: ', istr)
+astr = '123'
+try:
+    istr = int(astr)
+except:
+    istr = -1
+print('2nd try/catch:', istr)
+#! except block is only triggered if something goes wrong
+#! if try runs with no errors then except block gets ignored
