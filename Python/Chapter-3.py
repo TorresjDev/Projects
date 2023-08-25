@@ -92,14 +92,14 @@ else: # only runs if all conditions are not true
     print('Large')
 print('All done')
 
-#? Try/Except methods 
+#? Try / Except methods 
 # try is used to run code that might crash, except is used to handle any errors that might occur while attempting to run code within the try
 #* if code in the try block works then code in except is skipped
 #* if code in the try block fails then code jumps to the except block
 astr = "Hello World"
-try: # python attempts to run try 1st
+try: # when 1st conversion fails for try
     istr = int(astr)
-except: # python only runs except is try fails 
+except: # program continues into the except and carries on without breaking
     istr = -1
 print('1st try/catch: ', istr)
 astr = '123'
@@ -110,4 +110,3 @@ except:
 print('2nd try/catch:', istr)
 #! except block is only triggered if something goes wrong
 #! if try runs with no errors then except block gets ignored
-#? try/except allows python to continue reading program if something goes wrong in the try program runs except and continues reading program file
