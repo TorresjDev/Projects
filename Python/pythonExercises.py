@@ -1,15 +1,15 @@
 
 # #  Ch. 1 Exercise 
-# print('Hello Task')
-# nameInput = input("What's your name? ")
-# print('Hello', nameInput)
-# print('next task')
+print('Hello Task')
+nameInput = input("What's your name? ")
+print('Hello', nameInput)
+print('next task')
 
 #  Ch. 2 Exercise 
 print('Gross pay Task')
 hrInput = input("Enter Hours: ")
 rateInput = input("Enter Rate: ")
-try: #  Ch. 3.2 Exercise - adding try / except
+try: # Also part of Ch. 3.2 Exercise - adding try / except
   wrkHrs = float(hrInput)
   wrkRate = float(rateInput)
 except:
@@ -31,3 +31,4 @@ else:
   pay = wrkHrs * wrkRate
 print('Total Pay: $', pay)
 
+#  Ch. 5 Exercise
