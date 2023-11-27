@@ -1,6 +1,7 @@
 # Chapter 4 - Functions A
-#* Stored (and reused) Steps
+#* Stored (and reused) Steps, Dont Repeat yourself!
   # keyword def = function in python
+  # def defines a function
 #? There are 2 kinds of functions in Python Built-in && user-defined
   # Built-in Functions are provided as part of python: print(), input(), type(), float(), int(), ect
   # User Defined Functions are created by developer: ex def doSomething()
@@ -41,28 +42,31 @@ print_lyrics()
 print(x)
 print('Done')
 
-#* Arguments
+#? Arguments
 # an argument is a value we pass into the function as its input when we call function
 # use arguments to direct function to do different kinds of work at different times
 # put arguments in the parentheses after the name of function ex: big = max('hello wold')
 
-#* Parameters
+#? Parameters
 # A parameter is a variable which we use in function definition
   # it a handle/placeholder that allows the code in the function to access the arguments from invoked function
   
 def greet(lang):
   if lang == 'es':
     print('Hola')
+  elif lang == 'it':
+    print('Ciao')
   elif lang == 'fr':
     print('Bonjour')
   else:
     print('Hello')
     
 greet('en')
+greet('it')
 greet('es')
 greet('fr')
 
-#* Return Values
+#? Return Values
 # return a value to be used as the value of the function call in calling expression
 # keyword return is used for this 
 def greet(lang):
@@ -74,13 +78,14 @@ def greet(lang):
    return 'Hello'
     
 print(greet('en'), 'Crystal')
+print(greet('it'), 'Lisa')
 print(greet('es'), 'Marissa')
 print(greet('fr'), 'Donna')
 
 #? A fruitful function is one that produces a result or return value
   # the return statement ends the function execution and sends back the result of function
   
-#* Multiple Parameters / Arguments
+#? Multiple Parameters / Arguments
 # simply add more arguments to function / parameters when invoking
 
 def addTwo(a, b):
@@ -90,7 +95,7 @@ def addTwo(a, b):
 x = addTwo(4,5)
 print(x)
 
-#* Void (non-fruitful) Functions
+#? Void (non-fruitful) Functions
 # we a function does not return a value we call it 'void'
 # functions that return values are "fruitful" functions
 # Void functions are "not fruitful"

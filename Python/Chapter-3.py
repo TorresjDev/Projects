@@ -3,7 +3,7 @@ print('Chapter 3 Conditional Execution')
 # creating decision for python to do on certain scenarios 
 #? Conditional Steps is the process step by step ex:
 exNumber = 5
-print('Conditional Steps Ex:')
+print('Conditional Steps Ex:' + str(exNumber))
 if exNumber < 10:
     print('Smaller')
 if exNumber > 10:
@@ -13,7 +13,7 @@ if exNumber > 10:
     # Comparison Operators look at variables but do not change the variables
 x = 5
 print('Conditional Steps using Comparison Operators:')
-if x == 5: print('Equals5')
+if x == 5: print('Equals 5')
 if x > 4: print('Greater than 4')
 if x >= 5: print('Greater than or equals 5')
 if x < 6 : print('Less than 6')
