@@ -9,11 +9,12 @@ print(n)
 # ^ this is an example of a good loop 
 # loops are repeated steps containing iterations variables that change each time it goes through a loop
 
-n = 5
-while n > 0:
-  print('Blastoff!')
-print('Dry off!')
-# this is was wrong looks like with the loop iteration running constantly
+#! warning infinite loop
+# n = 5
+# while n > 0:
+#   print('Blastoff!')
+# print('Dry off!')
+#! this is was wrong looks like with the loop iteration running constantly
 
 n = 0
 while n > 0:
@@ -27,9 +28,9 @@ print('Dry off!')
 # break statement will end the current loop and jump to the statement immediately following the loop
 
 while True:
-  line = input('>')
-  if line == 'done':
-    break
+  line = input('> ')
+  if line == 'done': 
+    break  # type done to break the loop iteration
   print(line)
 print('Done!')
 
@@ -37,11 +38,11 @@ print('Done!')
 # * Finishing an Iteration with Continue statment
 # continue statement ends the current iteration and jumps to the top of the loops and starts the next iteration
 while True:
-  line = raw_input('>')
+  line = input('> ')
   if line[0] == '#':
     continue
   if line == 'done':
-    break
+    break  # type done to break the loop iteration
   print(line)
 print('Done!')
 # !
