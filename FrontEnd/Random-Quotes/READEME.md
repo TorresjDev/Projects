@@ -1,2 +1,0 @@
---use for starting the database
---Run- json-server --watch data/db.json --port 8000
