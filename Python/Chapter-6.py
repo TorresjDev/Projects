@@ -29,3 +29,14 @@ apple = input("Enter:")
 x = apple - 10 #! if apple is not a number this might error
 x = int(apple) - 10 
 print(x)
+
+#? Looking Inside Strings
+  # you can target index characters inside string values
+  # index value must be an integer and start at 0
+  # Index value can be an expression that is computed
+  
+fruit = 'banana'
+letter = fruit[1]
+x = 3
+w = fruit[x - 1]
+print(w)
