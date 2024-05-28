@@ -1,10 +1,10 @@
-# # #  Ch. 1 Exercise 
+# ? #  Ch. 1 Exercise
 # print('Hello Task')
 # nameInput = input("What's your name? ")
 # print('Hello', nameInput)
 # print('next task')
 
-# #  Ch. 2 Exercise 
+# ?  Ch. 2 Exercise
 # print('Gross pay Task')
 # hrInput = input("Enter Hours: ")
 # rateInput = input("Enter Rate: ")
@@ -18,7 +18,7 @@
 # print('Total Pay: $', pay)
 # print('next task')
 
-# #  Ch. 3.1 Exercise
+# ?  Ch. 3.1 Exercise
 # if wrkRate > 40:
 #   print('Overtime Rate Total: ', rateInput)
 #   reg = wrkRate * wrkHrs
@@ -30,19 +30,27 @@
 #   pay = wrkHrs * wrkRate
 # print('Total Pay: $', pay)
 
-#  Ch. 5 Exercise
-num = 0
-total = 0.0
-while True:
-  stringVar = input('Enter a number ')
-  if stringVar == 'done': # When user types done it breaks the while loop
-    break
-  try:
-    floatV = float(stringVar)
-  except:
-      print('Invalid Input')
-      continue # continue allows code to continue without error
-  num = num + 1
-  total = total + floatV
-  
-print(total,num,total/num)
+# ?  Ch. 5 Exercise
+# num = 0
+# total = 0.0
+# while True:
+#   stringVar = input('Enter a number ')
+#   if stringVar == 'done': # When user types done it breaks the while loop
+#     break
+#   try:
+#     floatV = float(stringVar)
+#   except:
+#       print('Invalid Input')
+#       continue # continue allows code to continue without error
+#   num = num + 1
+#   total = total + floatV
+
+# print(total,num,total/num)
+
+# ? 07.01 Read file exercise
+fh = open('mbox-i.txt')
+print(fh)
+
+for lx in fh:
+    ly = lx.rstrip()
+    print(ly.upper())
