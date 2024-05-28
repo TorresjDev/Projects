@@ -1,8 +1,23 @@
-# **Projects of Learning and Growth**
+# **🚀 Projects of Learning and Growth 🌟**
 
-> #### **_Dive into a curated collection of my personal coding projects. This portfolio is a testament to my proficiency across diverse programming languages and frameworks, showcasing a blend of responsive web applications, data analysis, and visualization. It's a narrative of my relentless pursuit of knowledge and skill enhancement._**
+> #### **_🌐 Dive into a curated collection of my coding projects. This portfolio highlights my skills across various programming languages and frameworks. From responsive web apps to data visualization, it's a testament to my passion for continuous learning and growth. 💻📈_**
+
+
 
 ---
+
+## **C#:**
+
+<div>
+  <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">
+    <img src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#" height="42" />
+  </a>       
+</div>
+
+- **_My C# Learning Journey:_**
+  > - Progress and explorations in C# through a Microsoft structured course.
+  > - Covers basic to intermediate programming concepts.
+
 
 ## **Python:**
 
