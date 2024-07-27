@@ -48,9 +48,30 @@
 # print(total,num,total/num)
 
 # ? 07.01 Read file exercise
-fh = open('mbox-i.txt')
-print(fh)
+# fh = open('mbox-i.txt')
+# print(fh)
 
-for lx in fh:
-    ly = lx.rstrip()
-    print(ly.upper())
+# for lx in fh:
+#     ly = lx.rstrip()
+#     print(ly.upper())
+
+# ? 08 Exercise
+
+han = open('mbox-i.txt')
+
+for line in han:
+    line = line.rstrip()
+    wds = line.split()
+
+    # V1 # Guardian pattern - check if the list is empty before accessing the element
+    # if len(wds) < 1:
+    #     continue
+
+    # V2 # Guard pattern - check if the list is empty before accessing the element
+    # guardian comes before the list - short circuit evaluation
+    if len(wds) < 3 or wds[0] != 'From':
+        continue
+
+    print(wds[2])
+
+# check for sanity
