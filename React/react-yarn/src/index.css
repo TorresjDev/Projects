@@ -1,0 +1,80 @@
+/* Custom google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond&family=Inspiration&family=Ledger&family=Pacifico&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&display=swap');
+
+/*  */
+
+:root {
+	--main-white: #f0f0f0;
+	--main-red: #9d1628;
+	--main-blue: #45567d;
+	--main-gray: #303841;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* 1200px / 16px = 75em */
+
+@media (max-width: 75em) {
+	html {
+		font-size: 60%;
+	}
+}
+
+/* 980px / 16px = 61.25em */
+
+@media (max-width: 61.25em) {
+	html {
+		font-size: 58%;
+	}
+	video {
+		object-fit: cover;
+		height: 100%;
+	}
+}
+
+/* 720px / 16px = 28.75em */
+
+@media (max-width: 45em) {
+	html {
+		font-size: 55%;
+	}
+}
+
+/* 460px / 16px = 28.75em */
+
+@media (max-width: 28.75em) {
+	html {
+		font-size: 50%;
+	}
+}
+
+/* Base styles */
+
+/* body {
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.2;
+    color: var(--main-white);
+    padding-bottom: 60px;
+} */
+
+/* img {
+    display: block;
+    width: 100%;
+} */
+
+/* .app {
+	margin-top: 5.1%;
+	margin-bottom: 3rem;
+} */

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+
+<body>
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video width="500" height="500" autoplay="true" loop="true">
+                <source src="vid/sunrise.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content ">
+            <div class="logo">
+                <a href="/parallax-website/index.html"><img src="./img/moon-img-iii.png" alt="logo"></a>
+            </div>
+            <div class="logo-name">
+                <h2 class="logo-detail">Jesus Torres</h2>
+                <p class="logo-detail">Software Engineer</p>
+                <a href="#about" class="fa fa-chevron-circle-down fa-5x" style="opacity: 10%"></a>
+            </div>
+        </div>
+    </header>
+    <section class="section-light" id="about">
+        <h2>Who am I?</h2>
+        <div class="about-me">
+            <aside>
+                <p>PDF Resume File:</p>
+                <a href="files/resume.pdf" download>
+                    <button style='font-size:18px'>Download file <i class='fas fa-download'></i></button>
+                </a>
+            </aside>
+            <a href="https://www.linkedin.com/in/torresdev/" target="_blank" class="contact-details profile-link">
+                <i class="fab fa-linkedin"></i>
+                <span>torresdev</span>
+            </a>
+            <a id="profile-link" href="https://github.com/TorresjDev" target="_blank" class="contact-details profile-link">
+                <i class="fab fa-github"></i>
+                <span>TorresjDev</span>
+            </a>
+        </div>
+    </section>
+    <div class="parallax-img2">
+    </div>
+    <div class="section skill-section">
+        <h2>What I do?</h2>
+        <p class="skill-name"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Web Design</p>
+        <div class="skill-container">
+            <div class="skills design">80%</div>
+        </div>
+        <p class="skill-name"><i class="fa fa-picture-o" aria-hidden="true"></i> Front-End (HTML, CSS, JS)</p>
+        <div class="skill-container">
+            <div class="skills front-end">85%</div>
+        </div>
+        <p class="skill-name"><i class="fa fa-cogs" aria-hidden="true"></i> Back-End (C#, SQL, MongoDB, Node.js)</p>
+        <div class="skill-container">
+            <div class="skills back-end">75%</div>
+        </div>
+        <p class="skill-name"><i class="fa fa-briefcase"></i> Testing (DevTools, Axios, Postman)</p>
+        <div class="skill-container">
+            <div class="skills testing">70%</div>
+        </div>
+        <p class="skill-name"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Learning a new skill</p>
+        <div class="skill-container">
+            <div class="skills learn">115%</div>
+        </div>
+    </div>
+    <div class="parallax-img3">
+    </div>
+    <div class="section section-dark">
+        <article class="article">
+            <h2 class="projects-section-header">Projects I've done.</h2>
+            <div class="projects-grid">
+                <a href="https://codepen.io/TorresjDev/pen/yLjWZWP" target="_blank" class="project project-title">
+                    <img class="project-image" src="https://i.ibb.co/GP3dq4c/random-quote.jpg" alt="project" border="0" />
+                    <p class="project-title random-quote">
+                        <span class="code">&lt;</span> Random Quotes
+                        <span class="code">/&gt;</span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/TorresjDev/pen/abKwMJO" target="_blank" class="project project-title">
+                    <img src="https://i.ibb.co/wJw2KcP/picture-page.jpg" alt="project" class="project-image" border="0" />
+                    <p class="project-title">
+                        <span class="code">&lt;</span> Photo Gallery
+                        <span class="code">/&gt;</span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/TorresjDev/pen/MWXoRWa" target="_blank" class="project project-title">
+                    <img src="https://i.ibb.co/jw55Bp8/magazine.jpg" alt="project" class="project-image" border="0" />
+                    <p class="project-title">
+                        <span class="code">&lt;</span> Magazine-Page
+                        <span class="code">/&gt;</span>
+                    </p>
+                </a>
+            </div>
+            <a href="https://codepen.io/TorresjDev" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i
+            ></a>
+        </article>
+    </div>
+    <div class="parallax-img1">
+        <div class="ptext">
+            <span class="border">
+        <p>Next Journey</p>
+      </span>
+        </div>
+    </div>
+    <section class="section-final" id="about">
+        <aside class="side-content">
+            <h2 class="contact-section-header">Let's work together...</h2>
+            <div class="contact-links">
+                <a onclick="copyEmail()" href="mailto:j.torres3.dev@gmail.com" class=" contact-details">
+                    <i class="fa fa-paper-plane"></i>
+                    <span id="email">
+                          j.torres3.dev@gmail.com
+                    </span>
+                </a>
+                <a href="tel:760-515-9294" class="contact-details">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Call me</span>
+                </a>
+            </div>
+        </aside>
+    </section>
+    <footer></footer>
+    <script>
+        var copyText = document.getElementById("email").innerText;
+
+        function copyEmail() {
+            navigator.clipboard.writeText(copyText);
+            alert("Copied email: " + copyText);
+        }
+    </script>
+</body>
+
+</html>

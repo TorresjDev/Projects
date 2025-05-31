@@ -1,0 +1,174 @@
+/* Custom properties/variables  */
+:root {
+	--main-white: #f0f0f0;
+	--main-red: #be3144;
+	--main-blue: #45567d;
+	--main-gray: #303841;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+	html {
+		font-size: 60%;
+	}
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+	html {
+		font-size: 58%;
+	}
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+	html {
+		font-size: 55%;
+	}
+}
+
+/* Base styles */
+
+body {
+	font-size: 1.5rem; /* 18px */
+	font-weight: 400;
+	line-height: 1.2;
+	color: var(--main-white);
+}
+
+h1,
+h2 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+h2 {
+	font-size: 4.2rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+/* Home card previews */
+.card-preview {
+	padding: 10px 16px;
+	margin: 20px 0;
+	border-bottom: 1px solid #fafafa;
+}
+
+.card-preview:hover {
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-preview h2 {
+	font-size: 20px;
+	color: #f1356d;
+	margin-bottom: 8px;
+}
+
+.card-preview a {
+	text-decoration: none;
+}
+
+/* card details page */
+
+.card-details h2 {
+	font-size: 20px;
+	color: #f1356d;
+	margin-bottom: 10px;
+}
+
+.card-details div {
+	margin: 20px 0;
+}
+
+/* card-create new card form */
+.card-create {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+.card-create label {
+	text-align: left;
+	display: block;
+}
+.card-create h2 {
+	font-size: 20px;
+	color: #f1356d;
+	margin-bottom: 30px;
+}
+.card-create input,
+.card-create textarea,
+.card-create select {
+	width: 100%;
+	padding: 6px 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	display: block;
+}
+.card-create button {
+	background: #f1356d;
+	color: #fff;
+	border: 0;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+	font-weight: 300;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem;
+	background: var(--main-gray);
+	border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+	margin: 2rem;
+}
+
+footer i {
+	vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+}
