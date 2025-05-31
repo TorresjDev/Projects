@@ -1,0 +1,24 @@
+# Ignore build folders
+bin/
+obj/
+
+# Ignore packages
+packages/
+
+# Ignore all .NET and Visual Studio cache, temporary and generated files
+*.cache
+*.sln
+*.vs/
+*.nupkg
+*.user
+*.userosscache
+*.suo
+*.tmp
+*.temp
+*.tmp_proj
+project.lock.json
+project.fragment.lock.json
+annotations/
+
+# Ignore specific files
+settings.json
