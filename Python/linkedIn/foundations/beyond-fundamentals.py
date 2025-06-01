@@ -8,6 +8,8 @@
 # 1.1: Lists
 # Lists are simple collections of groups of data together in a certain order and assigns the collection a name.
 
+import re
+import testmodule
 from matplotlib.pylab import f
 
 
@@ -128,6 +130,68 @@ fruits = [
 print("Fruits found in the list:")
 for fruit in fruits:
     print(fruit)
+
+
+# endregion
+
+# region 3: External Code
+
+# The testmodule.py file contains a function called mult that multiplies two numbers and prints the result.
+# The function is imported and used in this script.
+print("Using the mult function from testmodule.py:")
+testmodule.mult(5, 10)
+# The mult function can be used to multiply any two numbers.
+testmodule.mult(3, 7)
+
+# endregion
+
+
+# region 4: Working with Strings
+
+value = input("Enter a number: ")
+# The input function takes user input and returns it as a string.
+print(f"You entered: {value}")
+# The strip method removes leading and trailing whitespace from a string.
+print(f"Lets multiply {value} by 2.")
+value_int = int(value.strip())
+# The int function converts a string to an integer.
+print(f"{value} * 2 = {value_int * 2}")
+
+# The capitalize method capitalizes the first letter of a string.
+first_name = 'malala'
+last_name = 'yousafzai'
+note = 'award: Nobel Peace Prize'
+
+first_name_capitalized = first_name.capitalize()
+last_name_capitalized = last_name.capitalize()
+note_capitalized = note.capitalize()
+
+print(f"Full name: {first_name_capitalized} {last_name_capitalized}")
+print(f"Note: {note_capitalized}")
+
+# Regular expressions (regex) are used to match patterns in strings.
+# regex is a powerful tool for searching and manipulating strings.
+
+five_digit_zip = '98101'
+nine_digit_zip = '98101-0003'
+phone_number = '234-567-8901'
+# var regex will match a string that starts with exactly 5 digits
+five_digit_expression = r'^\d{5}'
+print("Checking if the strings match the five-digit zip code pattern:")
+print(re.search(five_digit_expression, five_digit_zip))
+print(re.search(five_digit_expression, nine_digit_zip))
+print(re.search(five_digit_expression, phone_number))
+
+# Challenge:
+
+# Take value entered by user and convert it to kilometers.
+# print result in terminal.
+miles = input('Enter a distance in miles: ')
+# kilometers_value = miles_value * 1.609344
+
+miles_float = float(miles.strip())
+kilometers_value = miles_float * 1.609344
+print(f"{miles} mile(s) is equal to {kilometers_value} kilometers.")
 
 
 # endregion
