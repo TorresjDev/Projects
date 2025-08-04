@@ -8,7 +8,9 @@
 
 ```
 Projects/
-├── Angular/                    # Full-stack Angular applications with MEAN stack
+├── FullStack/                  # Enterprise full-stack applications and architectures
+│   ├── AdvDiversity/           # React + .NET + SQL Server (Three-tier architecture)
+│   └── Angular-MEAN/           # Angular + Node.js + MongoDB (MEAN stack)
 ├── CSharp/                     # C# learning projects and console applications
 ├── FrontEnd/                   # Responsive web applications and UI/UX projects
 ├── FullStack/                  # Multi-tier full-stack development projects
@@ -49,7 +51,7 @@ Projects/
   > - Data manipulation, file processing, and automation scripting
   > - Integration with APIs, web scraping, and data analysis workflows
 
-### **Angular Full-Stack:**
+### **MEAN Stack Development:**
 
 <div>  
   <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
