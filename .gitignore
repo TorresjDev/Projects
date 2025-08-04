@@ -32,7 +32,14 @@ yarn-error.log*
 .gitignore
 FrontEnd/.vscode/settings.json
 
+Projects.sln
 
+*Ex_Files_Programming_Foundations_2023
+
+*obj
+
+*bin
+=======
 # C# specific
 Projects.sln
 *.sln
