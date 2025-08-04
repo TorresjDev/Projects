@@ -33,4 +33,17 @@ yarn-error.log*
 FrontEnd/.vscode/settings.json
 
 
+# C# specific
+Projects.sln
+*.sln
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.exe
+=======
+
 *Ex_Files_Programming_Foundations_2023
