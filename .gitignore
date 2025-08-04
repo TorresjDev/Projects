@@ -32,6 +32,7 @@ yarn-error.log*
 .gitignore
 FrontEnd/.vscode/settings.json
 
+
 # C# specific
 Projects.sln
 *.sln
@@ -43,3 +44,6 @@ Projects.sln
 *.dll
 *.pdb
 *.exe
+=======
+
+*Ex_Files_Programming_Foundations_2023
