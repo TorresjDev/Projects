@@ -39,3 +39,18 @@ Projects.sln
 *obj
 
 *bin
+=======
+# C# specific
+Projects.sln
+*.sln
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.exe
+=======
+
+*Ex_Files_Programming_Foundations_2023
