@@ -31,3 +31,15 @@ yarn-debug.log*
 yarn-error.log*
 .gitignore
 FrontEnd/.vscode/settings.json
+
+# C# specific
+Projects.sln
+*.sln
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.exe
