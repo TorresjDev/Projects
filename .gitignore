@@ -51,6 +51,24 @@ Projects.sln
 *.dll
 *.pdb
 *.exe
-=======
+
+# Visual Studio specific
+.vs/
+*/.vs/
+**/.vs/
+*.vsidx
+*.vspscc
+*.vsscc
+*.vssettings
+*.vssscc
+.vscode/
+*/.vscode/
+**/.vscode/
+
+# Project specific files
+ProjectSettings.json
+VSWorkspaceState.json
+*.sqlite
+*.sqlite3
 
 *Ex_Files_Programming_Foundations_2023
