@@ -67,20 +67,64 @@ The **Institute to Advance Diversity** is a comprehensive full-stack application
 
 ---
 
+## **🅰️ Angular-MEAN Platform**
+
+### **Project Overview**
+
+The **Angular-MEAN Stack Development Platform** demonstrates modern full-stack JavaScript development using the MEAN (MongoDB, Express.js, Angular, Node.js) architecture. This project showcases end-to-end TypeScript development with a scalable, maintainable codebase structure.
+
+### **🛠️ Technology Stack**
+
+#### **Frontend Layer**
+
+- **Framework:** Angular with TypeScript
+- **Architecture:** Component-based architecture with services and dependency injection
+- **Styling:** Modern CSS with responsive design patterns
+- **Build Tools:** Angular CLI for development and production builds
+
+#### **Backend Layer**
+
+- **Runtime:** Node.js with Express.js framework
+- **Language:** TypeScript for type-safe server-side development
+- **API Design:** RESTful endpoints with proper middleware
+- **Architecture:** Modular structure with routers, models, and configurations
+
+#### **Development Environment**
+
+- **CI/CD:** CircleCI for continuous integration
+- **IDE Configuration:** VS Code workspace settings for optimal development
+- **Package Management:** NPM for dependency management
+- **Testing:** Karma and Jasmine for unit testing
+
+- **Framework:** React with modern JavaScript (ES6+)
+- **Styling:** CSS3 with responsive design principles
+- **Components:** Modular, reusable component architecture
+- **Validation:** Client-side form validation with schema-based approach
+
+---
+
 ## **🌟 Key Features**
 
-### **📅 Job Fair Management System**
+### **📅 AdvDiversity - Job Fair Management System**
 
 - **Dynamic Form Wizard:** Multi-step job fair creation with validation
 - **Real-time Search:** Advanced filtering and search capabilities
 - **Interactive UI:** Intuitive icons and visual feedback
 - **Data Persistence:** Comprehensive CRUD operations through API
 
-### **🔄 Three-Tier Architecture**
+### **🅰️ Angular-MEAN - Modern Web Development**
 
-- **Data Layer:** Stored procedures for optimized database operations
-- **Business Logic:** Clean API design with proper error handling
-- **Presentation Layer:** React components with modern UX patterns
+- **Component Architecture:** Reusable Angular components with TypeScript
+- **Full-Stack TypeScript:** End-to-end type safety from frontend to backend
+- **RESTful API:** Express.js backend with structured routing
+- **Development Workflow:** Modern tooling with Angular CLI and automated testing
+
+### **🔄 Architectural Patterns**
+
+- **Three-Tier (AdvDiversity):** Database → API → Frontend separation
+- **MEAN Stack (Angular-MEAN):** MongoDB → Express → Angular → Node.js flow
+- **Clean Code:** Both projects demonstrate modular, maintainable architecture
+- **Professional Practices:** Version control, testing, and documentation standards
 
 ### **📱 Responsive Design**
 
