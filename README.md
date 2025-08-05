@@ -10,11 +10,10 @@
 Projects/
 ├── FullStack/                  # Enterprise full-stack applications and architectures
 │   ├── AdvDiversity/           # React + .NET + SQL Server (Three-tier architecture)
-│   └── Angular-MEAN/           # Angular + Node.js + MongoDB (MEAN stack)
+│   ├── Angular-MEAN/           # Angular + Node.js + MongoDB (MEAN stack)
+│   └── Digital-Caterpillar/    # Next.js + tRPC + PayloadCMS (Modern e-commerce)
 ├── CSharp/                     # C# learning projects and console applications
 ├── FrontEnd/                   # Responsive web applications and UI/UX projects
-├── FullStack/                  # Multi-tier full-stack development projects
-├── NextJS/                     # Next.js React applications and SSR projects
 ├── Python/                     # Python scripting, data analysis, and automation
 ├── React/                      # React component libraries and SPA applications
 ├── SQL/                        # Database design, scripts, and data management
@@ -132,6 +131,30 @@ Projects/
   > - State management patterns and component lifecycle mastery
   > - Cross-platform responsive design with mobile-first approach
 
+### **Next.js & Modern Stack:**
+
+<div>  
+  <a href="https://nextjs.org/" target="_blank">
+    <img src="https://profilinator.rishav.dev/skills-assets/nextjs.png" alt="Next.js" height="35" />
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank">
+    <img src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="35" />
+  </a>  
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="Tailwind CSS" height="35" />
+  </a>
+  <a href="https://trpc.io/" target="_blank">
+    <img src="https://trpc.io/img/logo.svg" alt="tRPC" height="35" />
+  </a>
+</div>
+
+- **_Modern Full-Stack Development:_**
+  > - Next.js 14 with App Router, Server-Side Rendering, and API Routes
+  > - Type-safe APIs with tRPC and end-to-end TypeScript integration
+  > - Headless CMS integration with PayloadCMS for content management
+  > - Modern authentication patterns with email verification and security best practices
+  > - Advanced UI components with Radix UI primitives and TailwindCSS
+
 ### **Database & SQL / NoSQL**
 
 <div>
@@ -190,32 +213,68 @@ Projects/
 
 ## **🎯 Project Highlights**
 
-### **📊 Enterprise Applications**
+### **🏢 Enterprise Full-Stack Applications**
 
-- **Financial Management Systems** with complex database relationships
-- **Real-time Dashboard Applications** using modern JavaScript frameworks
-- **Responsive Portfolio Websites** with advanced CSS animations and interactions
+**AdvDiversity Platform** - Three-tier architecture demonstrating enterprise development patterns
+
+- **Frontend:** React with modern JavaScript and responsive design
+- **Backend:** C# .NET Web API with RESTful design and dependency injection
+- **Database:** SQL Server with optimized stored procedures and complex relationships
+
+**Angular-MEAN Stack** - Modern JavaScript full-stack development
+
+- **Frontend:** Angular with TypeScript and component-based architecture
+- **Backend:** Express.js with TypeScript and middleware patterns
+- **Database:** MongoDB with document-based modeling and relationships
+
+**Digital-Caterpillar E-commerce** - Cutting-edge Next.js marketplace platform
+
+- **Frontend:** Next.js 14 with App Router and Server-Side Rendering
+- **Backend:** tRPC for type-safe APIs and PayloadCMS for content management
+- **Database:** MongoDB with headless CMS integration and email services
 
 ### **🔧 Technical Achievements**
 
-- **Full-Stack Architecture** design and implementation
-- **Database Optimization** and query performance tuning
-- **Component-Based UI Development** with reusable design systems
-- **API Integration** and microservices communication patterns
+- **Full-Stack Architecture** design across three different technology stacks
+- **Database Mastery** in both SQL (Server) and NoSQL (MongoDB) environments
+- **API Development** from traditional REST to modern type-safe tRPC implementations
+- **Modern UI/UX** with responsive design, component libraries, and accessibility standards
+- **Authentication Systems** ranging from custom APIs to modern email verification workflows
 
 ---
 
-## **🚀 Future Roadmap**
+## **🚀 Future Roadmap & Continuous Learning**
 
-- [ ] **Cloud Deployment** - AWS/Azure integration and containerization
-- [ ] **Testing Automation** - Unit, integration, and E2E testing frameworks
-- [ ] **GraphQL APIs** - Modern data fetching and real-time subscriptions
-- [ ] **Mobile Development** - React Native and PWA implementations
+### **🎯 Current Focus Areas**
+
+- [ ] **Cloud Architecture** - AWS/Azure deployment with containerization and microservices
+- [ ] **Advanced Testing** - Comprehensive testing strategies including unit, integration, and E2E
+- [ ] **AI Integration** - Exploring AI/ML APIs and modern LLM integrations
+- [ ] **Performance Optimization** - Advanced caching, CDNs, and application monitoring
+
+### **💡 Technology Exploration**
+
+- [ ] **GraphQL & Modern APIs** - Real-time subscriptions and federated schemas
+- [ ] **Mobile Development** - React Native and Progressive Web Applications
+- [ ] **DevOps & CI/CD** - Advanced pipeline automation and deployment strategies
+- [ ] **Emerging Frameworks** - Staying current with Next.js, Astro, and modern tooling
 
 ---
 
-### **💡 Philosophy: Code with Purpose**
+### **💡 Philosophy: Code with Purpose & Impact**
 
-> _"Every line of code tells a story of problem-solving, innovation, and continuous growth. This repository represents my journey as a software engineer—transforming complex challenges into elegant, scalable solutions that make a difference."_
+> _"Every line of code tells a story of problem-solving, innovation, and continuous growth. This repository represents my journey as a full-stack software engineer—transforming complex business challenges into elegant, scalable solutions that make a real difference. From enterprise diversity initiatives to modern e-commerce platforms, each project demonstrates not just technical proficiency, but the ability to understand requirements, architect solutions, and deliver value."_
 
-**Let's build the future, one commit at a time.** 🌟
+**Building the future through thoughtful engineering—one commit, one feature, one solution at a time.** 🌟
+
+---
+
+## **📈 Portfolio Statistics**
+
+- **🏗️ 3 Major Full-Stack Projects** showcasing different architectural patterns
+- **⚡ 6+ Technology Stacks** from traditional enterprise to cutting-edge modern frameworks
+- **🗄️ Multi-Database Experience** including SQL Server, MongoDB, and headless CMS integration
+- **🎨 Responsive Design Mastery** across vanilla CSS, frameworks, and modern utility-first approaches
+- **🔐 Authentication Expertise** from custom API solutions to modern verification workflows
+
+_Demonstrating versatility, growth, and readiness for any development challenge._ 💪
