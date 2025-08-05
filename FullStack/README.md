@@ -23,174 +23,187 @@ FullStack/
 │   │   └── Services/           # API service layer and data fetching
 │   └── README.md               # Project documentation
 ├── Angular-MEAN/               # MEAN Stack Development Platform
-│   ├── backend/                # Node.js + Express API server
-│   │   ├── src/                # TypeScript source code
-│   │   │   ├── configs/        # Configuration files and settings
+│   ├── .circleci/              # CI/CD pipeline configuration
+│   ├── backend/                # Node.js/Express.js API server
+│   │   ├── src/                # TypeScript backend source code
+│   │   │   ├── configs/        # Database and server configurations
 │   │   │   ├── constants/      # Application constants and enums
-│   │   │   ├── models/         # Data models and schemas
-│   │   │   └── router/         # API route definitions
-│   │   ├── package.json        # Backend dependencies and scripts
-│   │   └── tsconfig.json       # TypeScript configuration
+│   │   │   ├── models/         # Data models and TypeScript interfaces
+│   │   │   └── router/         # Express.js route handlers
+│   │   └── tsconfig.json       # TypeScript configuration for backend
 │   ├── frontend/               # Angular client application
-│   │   ├── src/                # Angular source code
-│   │   │   ├── app/            # Angular components and services
-│   │   │   ├── assets/         # Static assets and resources
+│   │   ├── src/                # Angular application source code
+│   │   │   ├── app/            # Angular components and modules
+│   │   │   │   ├── components/ # Feature components and pages
+│   │   │   │   ├── services/   # Angular services for API communication
+│   │   │   │   └── shared/     # Shared models, interfaces, and utilities
+│   │   │   ├── assets/         # Static assets and images
 │   │   │   └── environments/   # Environment-specific configurations
-│   │   ├── angular.json        # Angular CLI configuration
-│   │   └── package.json        # Frontend dependencies and scripts
+│   │   ├── angular.json        # Angular CLI workspace configuration
+│   │   └── karma.conf.js       # Testing configuration
 │   └── README.md               # Project documentation
-└── README.md                   # FullStack overview documentation
+└── Digital-Caterpillar/        # E-commerce Platform (Next.js)
+    ├── src/                    # Source code directory
+    │   ├── app/                # Next.js App Router pages and layouts
+    │   │   ├── (auth)/         # Authentication routes (sign-up, verify-email)
+    │   │   └── api/            # API routes and tRPC endpoints
+    │   ├── components/         # Reusable React components and UI library
+    │   ├── collections/        # PayloadCMS collections and schema
+    │   ├── lib/                # Utility functions and validators
+    │   └── trpc/               # Type-safe API layer with tRPC
+    ├── public/                 # Static assets and images
+    └── README.md               # Project documentation
 ```
 
 ---
 
-## **🎯 AdvDiversity Platform**
+## **🎯 Project Portfolio**
 
-### **Project Overview**
+### **🏢 AdvDiversity Platform**
 
-The **Institute to Advance Diversity** is a comprehensive full-stack application designed to connect individuals seeking personal growth, entrepreneurship, and career advancement with mentors across the country. This platform facilitates meaningful connections through a sophisticated matching system and interactive job fair management.
+The **Institute to Advance Diversity** is a comprehensive three-tier application designed to connect individuals seeking personal growth, entrepreneurship, and career advancement with mentors across the country. This platform demonstrates enterprise-level architecture with SQL Server, C# .NET Web API, and React.
 
-### **🛠️ Technology Stack**
-
-#### **Backend Layer**
-
-- **Database:** SQL Server with optimized stored procedures
-- **Data Management:** Complex CRUD operations with advanced search capabilities
-- **Performance:** Query optimization and efficient data retrieval patterns
-
-#### **MiddleTier (API Layer)**
-
-- **Framework:** C# .NET Web API
-- **Architecture:** RESTful API design with proper HTTP status codes
-- **Models:** Domain-driven design with clean separation of concerns
-- **Services:** Dependency injection and service layer pattern
-
-#### **Frontend Layer**
-
-- **Framework:** React with modern JavaScript (ES6+)
-- **Styling:** CSS3 with responsive design principles
-- **Components:** Modular, reusable component architecture
-- **Validation:** Client-side form validation with schema-based approach
+**Architecture:** Three-Tier (Database → API → Frontend)  
+**Focus:** Enterprise development, database optimization, RESTful APIs
 
 ---
 
-## **🅰️ Angular-MEAN Platform**
+### **🅰️ Angular-MEAN Platform**
 
-### **Project Overview**
+The **Angular-MEAN Stack Development Platform** showcases modern full-stack JavaScript development using the MEAN (MongoDB, Express.js, Angular, Node.js) architecture. This project demonstrates end-to-end TypeScript development with comprehensive testing and CI/CD integration.
 
-The **Angular-MEAN Stack Development Platform** demonstrates modern full-stack JavaScript development using the MEAN (MongoDB, Express.js, Angular, Node.js) architecture. This project showcases end-to-end TypeScript development with a scalable, maintainable codebase structure.
-
-### **🛠️ Technology Stack**
-
-#### **Frontend Layer**
-
-- **Framework:** Angular with TypeScript
-- **Architecture:** Component-based architecture with services and dependency injection
-- **Styling:** Modern CSS with responsive design patterns
-- **Build Tools:** Angular CLI for development and production builds
-
-#### **Backend Layer**
-
-- **Runtime:** Node.js with Express.js framework
-- **Language:** TypeScript for type-safe server-side development
-- **API Design:** RESTful endpoints with proper middleware
-- **Architecture:** Modular structure with routers, models, and configurations
-
-#### **Development Environment**
-
-- **CI/CD:** CircleCI for continuous integration
-- **IDE Configuration:** VS Code workspace settings for optimal development
-- **Package Management:** NPM for dependency management
-- **Testing:** Karma and Jasmine for unit testing
-
-- **Framework:** React with modern JavaScript (ES6+)
-- **Styling:** CSS3 with responsive design principles
-- **Components:** Modular, reusable component architecture
-- **Validation:** Client-side form validation with schema-based approach
+**Architecture:** MEAN Stack (MongoDB → Express → Angular → Node.js)  
+**Focus:** Full-stack TypeScript, component architecture, modern tooling
 
 ---
 
-## **🌟 Key Features**
+### **🛒 Digital-Caterpillar E-commerce Platform**
 
-### **📅 AdvDiversity - Job Fair Management System**
+**Digital-Caterpillar** is a sophisticated e-commerce platform built with cutting-edge technologies including Next.js 14, tRPC, and PayloadCMS. This application demonstrates advanced web development through a complete marketplace solution with authentication, payment processing, and content management.
 
-- **Dynamic Form Wizard:** Multi-step job fair creation with validation
-- **Real-time Search:** Advanced filtering and search capabilities
-- **Interactive UI:** Intuitive icons and visual feedback
-- **Data Persistence:** Comprehensive CRUD operations through API
+**Architecture:** Next.js Full-Stack (Server-Side Rendering + API Routes)  
+**Focus:** Modern React patterns, type-safe APIs, headless CMS
 
-### **🅰️ Angular-MEAN - Modern Web Development**
+---
 
+## **🛠️ Technology Stack Comparison**
+
+| **Technology** | **AdvDiversity** | **Angular-MEAN** | **Digital-Caterpillar** |
+|---|---|---|---|
+| **Frontend** | React + JavaScript | Angular + TypeScript | Next.js 14 + TypeScript |
+| **Backend** | C# .NET Web API | Express.js + TypeScript | Next.js API Routes + tRPC |
+| **Database** | SQL Server | MongoDB | MongoDB + PayloadCMS |
+| **Authentication** | Custom API | Express middleware | Next.js auth + email verification |
+| **Styling** | CSS3 + Responsive | Modern CSS | TailwindCSS + Radix UI |
+| **Testing** | API validation | Karma + Jasmine | React testing patterns |
+| **CI/CD** | Manual deployment | CircleCI | Modern deployment workflow |
+
+---
+
+## **🌟 Key Features & Capabilities**
+
+### **📅 Job Fair Management (AdvDiversity)**
+- **Dynamic Form Wizard:** Multi-step creation with server-side validation
+- **Advanced Search:** SQL-based filtering with stored procedures
+- **Three-Tier Architecture:** Clean separation of database, API, and UI layers
+- **Enterprise Patterns:** Dependency injection, service layer, and DTO mapping
+
+### **🍕 Food Ordering System (Angular-MEAN)**
 - **Component Architecture:** Reusable Angular components with TypeScript
 - **Full-Stack TypeScript:** End-to-end type safety from frontend to backend
-- **RESTful API:** Express.js backend with structured routing
-- **Development Workflow:** Modern tooling with Angular CLI and automated testing
+- **User Authentication:** Complete login/register system with JWT
+- **Shopping Cart:** Real-time cart management with local storage persistence
+- **Modern Tooling:** Angular CLI, automated testing, and CI/CD pipeline
 
-### **🔄 Architectural Patterns**
-
-- **Three-Tier (AdvDiversity):** Database → API → Frontend separation
-- **MEAN Stack (Angular-MEAN):** MongoDB → Express → Angular → Node.js flow
-- **Clean Code:** Both projects demonstrate modular, maintainable architecture
-- **Professional Practices:** Version control, testing, and documentation standards
-
-### **📱 Responsive Design**
-
-- Mobile-first approach with CSS Grid and Flexbox
-- Cross-browser compatibility and accessibility standards
-- Performance-optimized with lazy loading and code splitting
+### **💳 E-commerce Platform (Digital-Caterpillar)**
+- **Advanced Authentication:** Email verification and secure account management
+- **Product Catalog:** Dynamic browsing with advanced categorization
+- **Content Management:** Headless CMS with PayloadCMS integration
+- **Type-Safe APIs:** tRPC for end-to-end type safety and developer experience
+- **Modern UI/UX:** TailwindCSS with Radix UI components and smooth animations
 
 ---
 
 ## **🚀 Technical Highlights**
 
-### **Database Excellence**
+### **🗄️ Database Excellence**
 
-- **Advanced Stored Procedures:** JobFairs_Insert, JobFairs_Search, JobFairs_Update
-- **Version Control:** Multiple procedure versions showing iterative improvement
-- **Optimization:** Efficient query patterns and proper indexing strategies
+**AdvDiversity - SQL Server Mastery:**
+- Advanced stored procedures (JobFairs_Insert, JobFairs_Search, JobFairs_Update)
+- Query optimization and efficient indexing strategies
+- Multiple procedure versions showing iterative improvement
 
-### **API Design**
+**Angular-MEAN & Digital-Caterpillar - NoSQL Expertise:**
+- MongoDB integration with TypeScript models
+- PayloadCMS for structured content management
+- Document-based data modeling and relationships
 
-- **RESTful Endpoints:** Clean, semantic URL structure
-- **Model Validation:** Robust request/response handling
-- **Error Management:** Proper HTTP status codes and error responses
-- **Service Layer:** Dependency injection and testable architecture
+### **🔗 API Design & Architecture**
 
-### **Frontend Engineering**
+**RESTful API Patterns:**
+- Clean, semantic URL structures across all projects
+- Proper HTTP status codes and error handling
+- Comprehensive request/response validation
 
-- **Component Library:** Reusable UI components (JobFairForm, JobFairWizard, JobFairCard)
-- **State Management:** Efficient data flow and component communication
-- **User Experience:** Intuitive navigation and interactive feedback
-- **Code Quality:** PropTypes validation and consistent coding standards
+**Modern API Evolution:**
+- Traditional REST (AdvDiversity .NET Web API)
+- Express.js middleware patterns (Angular-MEAN)
+- Type-safe tRPC with Zod validation (Digital-Caterpillar)
 
----
+### **⚛️ Frontend Engineering Excellence**
 
-## **💡 Development Approach**
+**Component Architecture:**
+- Reusable UI components across React and Angular
+- Modern state management and data flow patterns
+- Responsive design with mobile-first approach
 
-This project demonstrates a **professional software development lifecycle** including:
+**Developer Experience:**
+- TypeScript integration for type safety
+- Modern build tools and hot reloading
+- Comprehensive testing strategies
 
-- **Requirements Analysis:** Understanding business needs and user stories
-- **System Design:** Three-tier architecture planning and database modeling
-- **Implementation:** Iterative development with version control
-- **Testing:** Component testing and API validation
-- **Documentation:** Comprehensive code comments and project documentation
+### **🔒 Authentication & Security**
 
----
-
-## **🎯 Learning Outcomes**
-
-Through this full-stack development project, key skills developed include:
-
-- **Backend Development:** SQL Server, stored procedures, database optimization
-- **API Development:** C# .NET Web API, RESTful design, service patterns
-- **Frontend Development:** React, component architecture, responsive design
-- **Integration:** End-to-end data flow from database to UI
-- **Professional Practices:** Code organization, documentation, version control
+- **AdvDiversity:** Server-side session management
+- **Angular-MEAN:** JWT-based authentication with middleware
+- **Digital-Caterpillar:** Next.js authentication with email verification
 
 ---
 
-### **🌟 Project Impact**
+## **💡 Development Approach & Learning Outcomes**
 
-This platform represents a complete solution for diversity and inclusion initiatives, demonstrating the ability to translate business requirements into technical solutions while maintaining code quality, performance, and user experience standards.
+This portfolio demonstrates a **comprehensive software development journey** including:
 
-**Connecting opportunities with talent through technology.** 🤝
+### **🎯 Technical Skills Mastery**
+- **Backend Development:** SQL Server, MongoDB, stored procedures, API design
+- **Frontend Development:** React, Angular, Next.js, component architecture
+- **Full-Stack Integration:** End-to-end data flow and type safety
+- **Modern Tooling:** CI/CD, testing frameworks, build optimization
+
+### **🏗️ Architectural Patterns**
+- **Three-Tier Architecture:** Clear separation of concerns (AdvDiversity)
+- **MEAN Stack:** Modern JavaScript full-stack development (Angular-MEAN)
+- **JAMstack Evolution:** Server-side rendering with modern React (Digital-Caterpillar)
+
+### **📈 Professional Practices**
+- **Version Control:** Git workflows and branch management
+- **Documentation:** Comprehensive project documentation and code comments
+- **Testing:** Unit testing, integration testing, and API validation
+- **Deployment:** CI/CD pipelines and production deployment strategies
+
+---
+
+## **🌟 Project Impact & Portfolio Value**
+
+These projects collectively demonstrate:
+
+- **🎓 Educational Growth:** From traditional web development to modern full-stack patterns
+- **💼 Professional Readiness:** Enterprise-level code quality and architectural decisions  
+- **🔧 Technical Versatility:** Proficiency across multiple technology stacks and paradigms
+- **🚀 Innovation Mindset:** Adoption of cutting-edge tools and best practices
+
+**From diversity initiatives to e-commerce solutions - building technology that connects people and powers business growth.** 🤝
+
+---
+
+*Each project represents a milestone in full-stack development mastery, showcasing the evolution from foundational concepts to advanced architectural patterns.*
