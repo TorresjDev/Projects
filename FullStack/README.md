@@ -8,19 +8,30 @@
 
 ```
 FullStack/
-└── AdvDiversity/               # Institute to Advance Diversity Platform
-    ├── BackEnd/                # Database layer and stored procedures
-    │   ├── Store Procedures/   # SQL Server stored procedures for CRUD operations
-    │   └── Tables/             # Database schema and table definitions
-    ├── MiddleTier/             # Business logic and API layer
-    │   ├── Controllers/        # Web API controllers for HTTP endpoints
-    │   ├── Models/             # Domain models and request/response DTOs
-    │   └── Services/           # Business logic and data access services
-    ├── FrontEnd/               # User interface and client-side logic
-    │   ├── components/         # Reusable React components
-    │   ├── pages/              # Application pages and layouts
-    │   ├── schema/             # Client-side validation schemas
-    │   └── Services/           # API service layer and data fetching
+├── AdvDiversity/               # Institute to Advance Diversity Platform
+│   ├── BackEnd/                # Database layer and stored procedures
+│   │   ├── Store Procedures/   # SQL Server stored procedures for CRUD operations
+│   │   └── Tables/             # Database schema and table definitions
+│   ├── MiddleTier/             # Business logic and API layer
+│   │   ├── Controllers/        # Web API controllers for HTTP endpoints
+│   │   ├── Models/             # Domain models and request/response DTOs
+│   │   └── Services/           # Business logic and data access services
+│   ├── FrontEnd/               # User interface and client-side logic
+│   │   ├── components/         # Reusable React components
+│   │   ├── pages/              # Application pages and layouts
+│   │   ├── schema/             # Client-side validation schemas
+│   │   └── Services/           # API service layer and data fetching
+│   └── README.md               # Project documentation
+└── Digital-Caterpillar/        # E-commerce Platform (Next.js)
+    ├── src/                    # Source code directory
+    │   ├── app/                # Next.js App Router pages and layouts
+    │   │   ├── (auth)/         # Authentication routes (sign-up, verify-email)
+    │   │   └── api/            # API routes and tRPC endpoints
+    │   ├── components/         # Reusable React components and UI library
+    │   ├── collections/        # PayloadCMS collections and schema
+    │   ├── lib/                # Utility functions and validators
+    │   └── trpc/               # Type-safe API layer with tRPC
+    ├── public/                 # Static assets and images
     └── README.md               # Project documentation
 ```
 
@@ -103,7 +114,65 @@ The **Institute to Advance Diversity** is a comprehensive full-stack application
 
 ---
 
-## **💡 Development Approach**
+## **� Digital-Caterpillar E-commerce Platform**
+
+### **Project Overview**
+
+**Digital-Caterpillar** is a modern, full-stack e-commerce platform built with cutting-edge technologies. This sophisticated application demonstrates advanced web development skills through a complete online marketplace solution featuring user authentication, payment processing, content management, and real-time functionality.
+
+### **🛠️ Technology Stack**
+
+#### **Frontend Layer**
+
+- **Framework:** Next.js 14 with App Router architecture
+- **Language:** TypeScript for type-safe development
+- **Styling:** TailwindCSS with custom component system
+- **UI Components:** Radix UI primitives with custom theming
+- **Icons:** Lucide React for consistent iconography
+
+#### **Backend Layer**
+
+- **Runtime:** Node.js with Express.js server
+- **API Architecture:** tRPC for type-safe, end-to-end API communication
+- **Content Management:** PayloadCMS for headless content management
+- **Database:** MongoDB with optimized document storage
+- **Email Service:** Nodemailer for transactional emails
+
+#### **Development Tools**
+
+- **Validation:** Zod schemas for runtime type checking
+- **State Management:** TanStack Query (React Query) for server state
+- **Form Handling:** React Hook Form with resolver integration
+- **Build Tools:** Webpack bundling with PayloadCMS integration
+
+---
+
+## **🌟 Advanced Features**
+
+### **💳 E-commerce Functionality**
+
+- **Shopping Cart:** Dynamic cart management with real-time updates
+- **Product Catalog:** Advanced product browsing and categorization
+- **User Accounts:** Complete authentication and profile management
+- **Email Verification:** Secure account activation workflow
+
+### **🎨 Modern UI/UX**
+
+- **Responsive Design:** Mobile-first approach with adaptive layouts
+- **Component Library:** Modular, reusable UI components
+- **Navigation System:** Dynamic navigation with category-based routing
+- **Interactive Elements:** Smooth animations and micro-interactions
+
+### **⚡ Performance & Architecture**
+
+- **Server-Side Rendering:** Next.js optimized rendering strategies
+- **API Integration:** Type-safe client-server communication
+- **Content Management:** Headless CMS for flexible content delivery
+- **Code Splitting:** Optimized bundle sizes and loading performance
+
+---
+
+## **�💡 Development Approach**
 
 This project demonstrates a **professional software development lifecycle** including:
 
