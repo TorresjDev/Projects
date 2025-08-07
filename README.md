@@ -11,6 +11,7 @@ Projects/
 ├── FullStack/                  # Enterprise full-stack applications and architectures
 │   ├── AdvDiversity/           # React + .NET + SQL Server (Three-tier architecture)
 │   ├── Angular-MEAN/           # Angular + Node.js + MongoDB (MEAN stack)
+│   ├── Dashboard/              # Next.js 14 + PostgreSQL (Financial management)
 │   └── Digital-Caterpillar/    # Next.js + tRPC + PayloadCMS (Modern e-commerce)
 ├── CSharp/                     # C# learning projects and console applications
 ├── FrontEnd/                   # Responsive web applications and UI/UX projects
@@ -227,6 +228,12 @@ Projects/
 - **Backend:** Express.js with TypeScript and middleware patterns
 - **Database:** MongoDB with document-based modeling and relationships
 
+**Dashboard Application** - Next.js 14 financial management system
+
+- **Frontend:** Next.js 14 with App Router and Server Components
+- **Backend:** Next.js API Routes with server-side authentication
+- **Database:** PostgreSQL with seeding scripts and optimized queries
+
 **Digital-Caterpillar E-commerce** - Cutting-edge Next.js marketplace platform
 
 - **Frontend:** Next.js 14 with App Router and Server-Side Rendering
@@ -235,11 +242,12 @@ Projects/
 
 ### **🔧 Technical Achievements**
 
-- **Full-Stack Architecture** design across three different technology stacks
-- **Database Mastery** in both SQL (Server) and NoSQL (MongoDB) environments
+- **Full-Stack Architecture** design across four different technology stacks
+- **Database Mastery** in SQL (Server), PostgreSQL, and NoSQL (MongoDB) environments
 - **API Development** from traditional REST to modern type-safe tRPC implementations
 - **Modern UI/UX** with responsive design, component libraries, and accessibility standards
 - **Authentication Systems** ranging from custom APIs to modern email verification workflows
+- **Next.js Expertise** demonstrating both App Router patterns and advanced React concepts
 
 ---
 
@@ -263,7 +271,7 @@ Projects/
 
 ### **💡 Philosophy: Code with Purpose & Impact**
 
-> _"Every line of code tells a story of problem-solving, innovation, and continuous growth. This repository represents my journey as a full-stack software engineer—transforming complex business challenges into elegant, scalable solutions that make a real difference. From enterprise diversity initiatives to modern e-commerce platforms, each project demonstrates not just technical proficiency, but the ability to understand requirements, architect solutions, and deliver value."_
+> _"Every line of code tells a story of problem-solving, innovation, and continuous growth. This repository represents my journey as a full-stack software engineer—transforming complex business challenges into elegant, scalable solutions that make a real difference. From enterprise diversity initiatives to financial management dashboards to modern e-commerce platforms, each project demonstrates not just technical proficiency, but the ability to understand requirements, architect solutions, and deliver value."_
 
 **Building the future through thoughtful engineering—one commit, one feature, one solution at a time.** 🌟
 
@@ -271,9 +279,9 @@ Projects/
 
 ## **📈 Portfolio Statistics**
 
-- **🏗️ 3 Major Full-Stack Projects** showcasing different architectural patterns
-- **⚡ 6+ Technology Stacks** from traditional enterprise to cutting-edge modern frameworks
-- **🗄️ Multi-Database Experience** including SQL Server, MongoDB, and headless CMS integration
+- **🏗️ 4 Major Full-Stack Projects** showcasing different architectural patterns
+- **⚡ 7+ Technology Stacks** from traditional enterprise to cutting-edge modern frameworks
+- **🗄️ Multi-Database Experience** including SQL Server, PostgreSQL, MongoDB, and headless CMS integration
 - **🎨 Responsive Design Mastery** across vanilla CSS, frameworks, and modern utility-first approaches
 - **🔐 Authentication Expertise** from custom API solutions to modern verification workflows
 

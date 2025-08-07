@@ -42,6 +42,18 @@ FullStack/
 │   │   ├── angular.json        # Angular CLI workspace configuration
 │   │   └── karma.conf.js       # Testing configuration
 │   └── README.md               # Project documentation
+├── Dashboard/                  # Financial Management Dashboard (Next.js 14)
+│   ├── app/                    # Next.js App Router directory
+│   │   ├── dashboard/          # Protected dashboard routes
+│   │   │   ├── (overview)/     # Dashboard overview with analytics
+│   │   │   ├── customers/      # Customer management interface
+│   │   │   └── invoices/       # Invoice management system
+│   │   ├── lib/                # Utility functions and configurations
+│   │   ├── ui/                 # Reusable UI component library
+│   │   └── layout.tsx          # Root application layout
+│   ├── public/                 # Static assets and images
+│   ├── scripts/                # Database seeding scripts
+│   └── README.md               # Project documentation
 └── Digital-Caterpillar/        # E-commerce Platform (Next.js)
     ├── src/                    # Source code directory
     │   ├── app/                # Next.js App Router pages and layouts
@@ -77,7 +89,16 @@ The **Angular-MEAN Stack Development Platform** showcases modern full-stack Java
 
 ---
 
-### **🛒 Digital-Caterpillar E-commerce Platform**
+### **� Dashboard Application**
+
+The **Financial Management Dashboard** is a comprehensive Next.js 14 application showcasing modern React patterns with the App Router architecture. Built as a complete business management interface, it demonstrates authentication, data visualization, customer management, and invoice processing.
+
+**Architecture:** Next.js Full-Stack (App Router + Server Components + PostgreSQL)  
+**Focus:** Modern React patterns, server-side rendering, financial data management
+
+---
+
+### **�🛒 Digital-Caterpillar E-commerce Platform**
 
 **Digital-Caterpillar** is a sophisticated e-commerce platform built with cutting-edge technologies including Next.js 14, tRPC, and PayloadCMS. This application demonstrates advanced web development through a complete marketplace solution with authentication, payment processing, and content management.
 
@@ -88,34 +109,46 @@ The **Angular-MEAN Stack Development Platform** showcases modern full-stack Java
 
 ## **🛠️ Technology Stack Comparison**
 
-| **Technology** | **AdvDiversity** | **Angular-MEAN** | **Digital-Caterpillar** |
-|---|---|---|---|
-| **Frontend** | React + JavaScript | Angular + TypeScript | Next.js 14 + TypeScript |
-| **Backend** | C# .NET Web API | Express.js + TypeScript | Next.js API Routes + tRPC |
-| **Database** | SQL Server | MongoDB | MongoDB + PayloadCMS |
-| **Authentication** | Custom API | Express middleware | Next.js auth + email verification |
-| **Styling** | CSS3 + Responsive | Modern CSS | TailwindCSS + Radix UI |
-| **Testing** | API validation | Karma + Jasmine | React testing patterns |
-| **CI/CD** | Manual deployment | CircleCI | Modern deployment workflow |
+| **Technology**     | **AdvDiversity**   | **Angular-MEAN**        | **Dashboard**                   | **Digital-Caterpillar**           |
+| ------------------ | ------------------ | ----------------------- | ------------------------------- | --------------------------------- |
+| **Frontend**       | React + JavaScript | Angular + TypeScript    | Next.js 14 + TypeScript         | Next.js 14 + TypeScript           |
+| **Backend**        | C# .NET Web API    | Express.js + TypeScript | Next.js App Router + API Routes | Next.js API Routes + tRPC         |
+| **Database**       | SQL Server         | MongoDB                 | PostgreSQL (Vercel)             | MongoDB + PayloadCMS              |
+| **Authentication** | Custom API         | Express middleware      | Next.js auth + bcrypt           | Next.js auth + email verification |
+| **Styling**        | CSS3 + Responsive  | Modern CSS              | TailwindCSS + Heroicons         | TailwindCSS + Radix UI            |
+| **Testing**        | API validation     | Karma + Jasmine         | Next.js patterns                | React testing patterns            |
+| **Deployment**     | Manual deployment  | CircleCI                | Vercel deployment               | Modern deployment workflow        |
 
 ---
 
 ## **🌟 Key Features & Capabilities**
 
 ### **📅 Job Fair Management (AdvDiversity)**
+
 - **Dynamic Form Wizard:** Multi-step creation with server-side validation
 - **Advanced Search:** SQL-based filtering with stored procedures
 - **Three-Tier Architecture:** Clean separation of database, API, and UI layers
 - **Enterprise Patterns:** Dependency injection, service layer, and DTO mapping
 
 ### **🍕 Food Ordering System (Angular-MEAN)**
+
 - **Component Architecture:** Reusable Angular components with TypeScript
 - **Full-Stack TypeScript:** End-to-end type safety from frontend to backend
 - **User Authentication:** Complete login/register system with JWT
 - **Shopping Cart:** Real-time cart management with local storage persistence
 - **Modern Tooling:** Angular CLI, automated testing, and CI/CD pipeline
 
-### **💳 E-commerce Platform (Digital-Caterpillar)**
+### **� Financial Dashboard (Dashboard)**
+
+- **Business Analytics:** Revenue tracking, customer metrics, and invoice analytics
+- **Data Visualization:** Interactive charts and financial insights
+- **Customer Management:** Full CRUD operations for customer directory
+- **Invoice Processing:** Complete invoice lifecycle with status tracking
+- **Next.js 14 App Router:** Server components, client components, and optimized routing
+- **PostgreSQL Integration:** Full-stack database operations with seeding scripts
+
+### **�💳 E-commerce Platform (Digital-Caterpillar)**
+
 - **Advanced Authentication:** Email verification and secure account management
 - **Product Catalog:** Dynamic browsing with advanced categorization
 - **Content Management:** Headless CMS with PayloadCMS integration
@@ -129,11 +162,13 @@ The **Angular-MEAN Stack Development Platform** showcases modern full-stack Java
 ### **🗄️ Database Excellence**
 
 **AdvDiversity - SQL Server Mastery:**
+
 - Advanced stored procedures (JobFairs_Insert, JobFairs_Search, JobFairs_Update)
 - Query optimization and efficient indexing strategies
 - Multiple procedure versions showing iterative improvement
 
 **Angular-MEAN & Digital-Caterpillar - NoSQL Expertise:**
+
 - MongoDB integration with TypeScript models
 - PayloadCMS for structured content management
 - Document-based data modeling and relationships
@@ -141,11 +176,13 @@ The **Angular-MEAN Stack Development Platform** showcases modern full-stack Java
 ### **🔗 API Design & Architecture**
 
 **RESTful API Patterns:**
+
 - Clean, semantic URL structures across all projects
 - Proper HTTP status codes and error handling
 - Comprehensive request/response validation
 
 **Modern API Evolution:**
+
 - Traditional REST (AdvDiversity .NET Web API)
 - Express.js middleware patterns (Angular-MEAN)
 - Type-safe tRPC with Zod validation (Digital-Caterpillar)
@@ -153,11 +190,13 @@ The **Angular-MEAN Stack Development Platform** showcases modern full-stack Java
 ### **⚛️ Frontend Engineering Excellence**
 
 **Component Architecture:**
+
 - Reusable UI components across React and Angular
 - Modern state management and data flow patterns
 - Responsive design with mobile-first approach
 
 **Developer Experience:**
+
 - TypeScript integration for type safety
 - Modern build tools and hot reloading
 - Comprehensive testing strategies
@@ -175,17 +214,20 @@ The **Angular-MEAN Stack Development Platform** showcases modern full-stack Java
 This portfolio demonstrates a **comprehensive software development journey** including:
 
 ### **🎯 Technical Skills Mastery**
+
 - **Backend Development:** SQL Server, MongoDB, stored procedures, API design
 - **Frontend Development:** React, Angular, Next.js, component architecture
 - **Full-Stack Integration:** End-to-end data flow and type safety
 - **Modern Tooling:** CI/CD, testing frameworks, build optimization
 
 ### **🏗️ Architectural Patterns**
+
 - **Three-Tier Architecture:** Clear separation of concerns (AdvDiversity)
 - **MEAN Stack:** Modern JavaScript full-stack development (Angular-MEAN)
 - **JAMstack Evolution:** Server-side rendering with modern React (Digital-Caterpillar)
 
 ### **📈 Professional Practices**
+
 - **Version Control:** Git workflows and branch management
 - **Documentation:** Comprehensive project documentation and code comments
 - **Testing:** Unit testing, integration testing, and API validation
@@ -198,12 +240,12 @@ This portfolio demonstrates a **comprehensive software development journey** inc
 These projects collectively demonstrate:
 
 - **🎓 Educational Growth:** From traditional web development to modern full-stack patterns
-- **💼 Professional Readiness:** Enterprise-level code quality and architectural decisions  
+- **💼 Professional Readiness:** Enterprise-level code quality and architectural decisions
 - **🔧 Technical Versatility:** Proficiency across multiple technology stacks and paradigms
 - **🚀 Innovation Mindset:** Adoption of cutting-edge tools and best practices
 
-**From diversity initiatives to e-commerce solutions - building technology that connects people and powers business growth.** 🤝
+**From diversity initiatives to financial dashboards to e-commerce solutions - building technology that connects people, manages business operations, and powers digital commerce growth.** 🤝
 
 ---
 
-*Each project represents a milestone in full-stack development mastery, showcasing the evolution from foundational concepts to advanced architectural patterns.*
+_Each project represents a milestone in full-stack development mastery, showcasing the evolution from foundational concepts to advanced architectural patterns across four distinct technology stacks._
